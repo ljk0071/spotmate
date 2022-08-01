@@ -12,12 +12,6 @@
 <body>
 <div id="wrap"  class="clearfix">
 <c:import url="/WEB-INF/views/includes/nav.jsp"></c:import>
-<div id="subHeader" class="clearfix">
-	<ul id="subNav">
-		<li><a href="#">PRODUCT</a></li>
-		<li><a href="#">REVIEW</a></li>
-	</ul>
-</div>
 <div id="contents" class="clearfix">
 	<div id="first" class="clearfix">
 		<div class="f1">

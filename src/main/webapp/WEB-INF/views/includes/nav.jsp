@@ -8,23 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div id="safe">
-<a href="#">안전하게 이용하는 스팟메이트 안전 대책 ></a>
-</div>
-<div id="header" class="clearfix">
-	<h1><a href="./"><img src="./assets/images/main.png" style="width:220px; height:120px;"></a></h1>
-	<ul id="nav"> 
-		<li id="brand">BRAND</li>
-		<li id="spot">SPOT</li>
-		<li id="mate">MATE</li>
-		<li id="driver">DRIVER</li>
-		<li id="notice">NOTICE</li>
-	</ul>
-	<ol id="login">
-		<li><a href="">로그인</a></li>
-		<li><a href="">회원가입</a></li>
-	</ol>
-	
-</div>
-</body>
+<div class="v240_10896"></div>
+	<span class="v240_10897">DRIVER</span>
+	<span class="v240_10898">NOTICE</span>
+	<span class="v240_10899">MATE</span>
+	<span class="v240_10900">SPOT</span>
+	<span class="v240_10901">BRAND</span>
+</body>	
 </html>
