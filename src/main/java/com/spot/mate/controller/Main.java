@@ -17,23 +17,29 @@ import com.spot.mate.vo.SearchVo;
 @Controller
 public class Main {
 	
-	@RequestMapping(value="/nav", method={RequestMethod.GET, RequestMethod.POST})
-	public String main() {
-		return "/includes/nav";
+	@RequestMapping(value="/carpoolWrite", method={RequestMethod.GET, RequestMethod.POST})
+	public String carpool() {
+		return "/driver/carpooldriver";
 	}
-	
-	@RequestMapping(value="/footer", method={RequestMethod.GET, RequestMethod.POST})
-	public String footer() {
-		return "/includes/footer";
+	@RequestMapping(value="/hitchWrite", method={RequestMethod.GET, RequestMethod.POST})
+	public String hitch1() {
+		return "/driver/hitchdriver";
 	}
-	
+	@RequestMapping(value="/mateWrite", method={RequestMethod.GET, RequestMethod.POST})
+	public String mate() {
+		return "/driver/matedriver";
+	}
 	@RequestMapping(value="/driver", method={RequestMethod.GET, RequestMethod.POST})
-	public String drive() {
-		return "/users/driverWriteForm";
-	}
-	@RequestMapping(value="/driverMain", method={RequestMethod.GET, RequestMethod.POST})
 	public String driveMain() {
-		return "/users/driverMain";
+		return "/driver/driverMain";
+	}
+	@RequestMapping(value="/hitch", method={RequestMethod.GET, RequestMethod.POST})
+	public String hitch() {
+		return "/spothitch/spotHitchMain";
+	}
+	@RequestMapping(value="/hitchdeep", method={RequestMethod.GET, RequestMethod.POST})
+	public String hitchdeep() {
+		return "/spothitch/spotHitchDeep";
 	}
 	@RequestMapping(value="/main9", method={RequestMethod.GET, RequestMethod.POST})
 	public String tmap(Model model) throws IOException {

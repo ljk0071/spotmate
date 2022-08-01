@@ -1,0 +1,160 @@
+@charset "UTF-8";
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+table {border-collapse:collapse;border-spacing:0}
+ul, ol {list-style-type: none;}
+a {text-decoration: none;}
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+#wrap {
+	width:1920px;
+	margin: 0px auto;
+}
+
+.header {
+	height: 200px;
+	background-color: #4454a1;
+}
+
+
+
+.contents {
+	width:1440px;
+	margin: 0px auto;
+	position: relative;
+}
+.top {
+	position: relative;
+	height: 200px;
+}
+.more {
+	font-size: 30px;
+	position:absolute;
+	top: 100px;
+	left: 190px;
+}
+.more2 {
+	font-size: 20px;
+	position:absolute;
+	top: 100px;
+	left: 800px;
+	
+}
+
+
+
+.mid {
+	position:relative;
+	height: 684px;
+}
+#map {
+	float:left;
+	margin: 50px 0px 0px 10px;
+	width: 710px;
+	height: 634px;
+}
+.info {
+	float:left;
+	width: 710px;
+	margin: 50px 0px 0px 0px;
+	border: 1px solid #666666;
+	
+}
+.infoTop {
+	text-align:center;
+	border-bottom: 3px solid #4454a1;
+	padding: 0px;
+	margin: 0px;
+}
+.searchbox {
+	position: relative;
+	padding: 20px 0px 20px 20px;
+	background-color: gray;
+}
+.searchbox > .place{
+	width: 200px;
+	height: 30px;
+}
+.searchbox > .person {
+	width: 100px;
+	height: 30px;
+}
+.searchbox > button {
+	position: absolute;
+	height: 30px;
+	left: 540px;
+}
+
+.searchboxDeep {
+	position: relative;
+	padding: 20px 0px 20px 20px;
+	border-bottom: 1px solid #4454a1;
+}
+.searchboxDeep > button {
+	position: absolute;
+	left: 540px;
+}
+
+.driverList {
+	position: relative;
+	padding: 10px 0px 0px 20px;
+	border-bottom: 1px solid #4454a1;
+}
+.driverList p{
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+}
+.driverList span{
+	margin: 0px 50px 0px 0px;
+}
+.start {
+	margin: 0px 0px 10px 0px;
+}
+.end {
+	margin: 0px 0px 10px 0px;
+}
+.num {
+	margin: 0px 0px 10px 0px;
+}
+.usePoint {
+	margin: 0px 0px 10px 0px;
+}
+.carPos {
+	position: absolute;
+	top: 50px;
+	left: 600px;
+}
+.detail {
+	position: absolute;
+	top: 200px;
+	left: 500px;
+}
+.rideReq {
+	position: absolute;
+	top: 200px;
+	left: 600px;
+}
+
+.banner {
+	width: 1440px;
+	height: 200px;
+	background: url(/assets/images/main.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin:300px 0px 150px 0px;
+}
+
+
+
+
+
+.footer {
+	height: 200px;
+	background-color: #4454a1;
+}

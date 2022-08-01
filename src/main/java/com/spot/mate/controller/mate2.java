@@ -58,13 +58,8 @@ public class mate2 {
 		
 		ObjectMapper mapper = new ObjectMapper();
 		Map<String, String> map = null;
-        try {
-    		map = mapper.readValue(section, Map.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+		map = mapper.readValue(section, Map.class);
         String vn = map.values().toString();
-        System.out.println(vn);
         vn = vn.substring(1);
 		vn = vn.substring(0, vn.length()-1);
         String[] avn = vn.split("=");

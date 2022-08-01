@@ -1,30 +1,32 @@
 @charset "EUC-KR";
 
-#contents > .f1 >  span {
+.f1 {
+	margin: 50px 0px 0px 0px;
+	padding: 0px 0px 0px 660px;
+}
+.f1 >  span {
 	font-weight: bold;
 	font-size: 30px;
 	text-align: center;
 	padding: 30px 0px 0px 0px;
 }
-#contents > .topbanner > img {
+.topbanner > img {
 	width: 1440px;
 	height: 200px;
 }
-#contents > .f1 {
-	margin: 0px 0px 0px 450px;
-}
-#contents > .f1 > img {
+.f1 > img {
 	float:left;
 	width: 100px;
 	height: 150px;
 }
-#contents > .f1 > ul {
+.f1 > ul {
 	list-style-type: disc;
 	color: #4454a1;
 	padding: 20px 0px 0px 120px;
 }
 .s2 {
-	margin: 100px;
+	width: 1440px;
+	margin: 100px auto;
 	padding: 50px;
 	box-shadow: 0px 0px 5px 1px #bfbfbf;
 }

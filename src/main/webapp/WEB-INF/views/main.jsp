@@ -11,7 +11,7 @@
 
 <style>
 	#map { 
-		margin: 0px 25% 0px 25%;
+		margin: 0px auto;
 	} 
 </style>
     <title>실시간 위치 나타내기</title>
@@ -36,7 +36,7 @@
 	setInterval(function() {
 		$("#map > div > div > div > div").remove();
 		real();
-	}, 5000);
+	}, 3000);
 	// 지도에 마커와 인포윈도우를 표시하는 함수입니다
 	function displayMarker(locPosition) {
 		var imageSrc = './assets/images/logo.png', // 마커이미지의 주소입니다    
@@ -85,5 +85,6 @@
 			    displayMarker(locPosition);
 			}
 	}
+
 </script>
 </html>

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+table {border-collapse:collapse;border-spacing:0}
+ul, ol {list-style-type: none;}
+a {text-decoration: none;}
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+#wrap {
+	width:1920px;
+	margin: 0px auto;
+}
+
+.header {
+	height: 200px;
+	background-color: #4454a1;
+}
+
+
+
+.contents {
+	width:1440px;
+	margin: 0px auto;
+	position: relative;
+}
+.top {
+	position: relative;
+	height: 200px;
+}
+.more {
+	font-size: 30px;
+	position:absolute;
+	top: 100px;
+	left: 190px;
+}
+.more2 {
+	font-size: 20px;
+	position:absolute;
+	top: 100px;
+	left: 800px;
+	
+}
+
+
+
+.mid {
+	position:relative;
+	height: 1100px;
+}
+.infoTop {
+	position:relative;
+	top:50px;
+	height: 100px;
+	border-bottom: 1px solid green;
+}
+.infoTop > span {
+	position: absolute;
+	top: 40px;
+	left: 120px;
+}
+.infoTop > button {
+	width: 200px;
+	height: 60px;
+	position: absolute;
+	top: 20px;
+	left: 1240px;
+}
+.markImg {
+	width: 60px;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	
+	background: url(/assets/images/main.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.waypoint {
+	width: 180px;
+	height: 50px;
+	background: rgba(245,245,245,1);
+	text-align: center;
+}
+.tname {
+	width: 539px;
+	padding: 0px 0px 0px 10px;
+}
+.destination {
+	width: 180px;
+	background: rgba(245,245,245,1);
+	text-align: center;
+}
+.data {
+	position:relative;
+	margin: 50px 0px 50px 0px;
+}
+#map {
+	position: relative;
+	width: 1440px;
+	height: 500px;
+}
+.back {
+	background-color: #4454a1;
+	color: white;
+	width: 200px;
+	height: 60px;
+	position: relative;
+	top: 50px;
+	left: 610px;
+}
+.banner {
+	width: 1440px;
+	height: 200px;
+	margin: 300px 0px 150px 0px;
+	background: url(/assets/images/main.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+.footer {
+	height: 200px;
+	background-color: #4454a1;
+}
