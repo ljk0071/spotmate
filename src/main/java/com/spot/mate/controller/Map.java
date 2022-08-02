@@ -18,8 +18,13 @@ public class Map {
 	
 	@RequestMapping(value="/map", method={RequestMethod.GET, RequestMethod.POST})
 	public String main() {
+//		DriverLicenseAuth dla = new DriverLicenseAuth();
+//		
+//		String a = dla.LicenseAuth("이준규", "970107", "11-22-013848-10", "DN7PHK");
+//		System.out.println(a);
 		return "/main";
 	}
+	
 	
 	@ResponseBody
 	@RequestMapping(value="/12", method={RequestMethod.GET, RequestMethod.POST})

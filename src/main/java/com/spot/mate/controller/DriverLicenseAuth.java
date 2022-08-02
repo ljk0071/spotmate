@@ -1,7 +1,5 @@
 package com.spot.mate.controller;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -11,15 +9,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class DriverLicenseAuth {
 	
 		
-	@SuppressWarnings("deprecation")
 	private WebDriver setup() {
 		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("disable-gpu", "lang=ko_KR", "window-size=1440,810", "headless",
+		options.addArguments("disable-gpu", "lang=ko_KR", "headless",
 				"user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36\r\n");
 		WebDriver driver = new ChromeDriver(options);
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		driver.get("https://map.naver.com/v5/directions/-/-/-/car?c=14100939.1067141,4548416.6248709,14,0,0,0,dh");
 		return driver;
 	}
 
