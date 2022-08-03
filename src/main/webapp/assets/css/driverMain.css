@@ -1,14 +1,3 @@
-@charset "UTF-8";
-*, :after, :before {box-sizing:border-box;flex-shrink:0;}
-:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
-html, body {height:100%;}
-img, picture, video, canvas, svg {display: block;max-width:100%;}
-table {border-collapse:collapse;border-spacing:0}
-ul, ol {list-style-type: none;}
-a {text-decoration: none;}
-.clearfix{*zoom:1;}
-.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
-.clearfix:after {clear: both;}
 #wrap {
 	width: 1920px;
 	margin: 0px auto;
@@ -21,15 +10,22 @@ a {text-decoration: none;}
 button {
 	margin: 10px 0px 0px 0px;
 }
-.contents {
+.contents {                      
 	margin: 100px auto;
 	width: 1440px;
-	height:1200px;
+	position: relative;
+	height:600px;
+}
+.swiper {
+	position: absolute;
+	width:100%;
+	height: 600px;
+	margin: 0px auto;
 }
 
-.first {
-	margin: 0px 0px 250px 0px;
-}
+/* .first { */
+/* 	margin: 0px 0px 500px 0px; */
+/* } */
 .first img {
 	float:left;
 	width:100px;
@@ -46,17 +42,17 @@ button {
 	margin: 0px 0px 0px 420px;
 }
 
-.second {
-	margin: 0px 0px 250px 0px;
-}
+/* .second { */
+/* 	margin: 0px 0px 250px 0px; */
+/* } */
 .second img {
 	float:right;
 	width:720px;
-	height:400px;
+	height:600px;
 }
 .second .s1 {
 	float:left;
-	padding: 60px 0px 0px 150px;
+	padding: 60px 0px 0px 0px;
 }
 .second .s1 .sfd {
 	font-weight: bold;
@@ -64,16 +60,16 @@ button {
 }
 .second .s1 .ssd {
 	float:left;
-	margin: 10px 0px 0px 0px;
+	margin: 60px 0px 0px 0px;
 }
 
-.third {
-	margin: 0px 0px 250px 0px;
-}
+/* .third { */
+/* 	margin: 0px 0px 250px 0px; */
+/* } */
 .third img {
 	float:left;
 	width:720px;
-	height:400px;
+	height:600px;
 }
 .third .t1 {
 	float:left;
@@ -89,17 +85,17 @@ button {
 }
 
 
-.fourth {
-	margin: 0px 0px 250px 0px;
-}
+/* .fourth { */
+/* 	margin: 0px 0px 250px 0px; */
+/* } */
 .fourth img {
 	float:right;
 	width:720px;
-	height:400px;
+	height:600px;
 }
 .fourth .f1 {
 	float:left;
-	padding: 60px 0px 0px 150px;
+	padding: 60px 0px 0px 0px;
 }
 .fourth .f1 .ffd {
 	font-weight: bold;

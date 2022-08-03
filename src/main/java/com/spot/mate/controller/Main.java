@@ -90,12 +90,11 @@ public class Main {
 	public String test() throws IOException {
 		return "/spotcarpool/spotMain";
 	}
+	
 	@ResponseBody
 	@RequestMapping(value="/search", method={RequestMethod.GET, RequestMethod.POST})
 	public SearchVo search(@RequestBody SearchVo search) {
 		System.out.println(search.toString());
-//		JsonObject jObject = new JsonObject();
-//		jObject.addProperty("result", search.toString());
 		return search;
 	}
 

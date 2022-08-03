@@ -6,22 +6,64 @@
 	width:1440px;
 	margin: 0px auto;
 	height: 1400px;
+	position:relative;
 }
 .top {
 	text-align:center;
 }
 .top > div > span {
 	font-size: 30px;
+	font-family: 'Montserrat';
+	font-weight: 700;
+}
+.top > div > p {
+	font-size: 30px;
+	font-family: 'Noto Sans Korean';
+	font-weight: 700;
+}
+.top > p {
+	font-size: 18px;
+	font-family: 'Noto Sans Korean';
+	font-weight: 600;
 }
 .top > div {
 	margin: 20px 0px 20px 0px;
 }
 .top > span {
-	position:relative;
-	left: 305px;
+	position:absolute;
+	top: 170px;
+	left: 955px;
+	font-family: 'Noto Sans Korean';
+	font-weight: 600;
+	font-size: 18px;
+	color: #4454a1;
 }
 
+.sdate::placeholder {
+	font-weight: 300;
+}
+.stime::placeholder {
+	font-weight: 300;
+}
+.splace::placeholder {
+	font-weight: 300;
+}
+.eplace::placeholder {
+	font-weight: 300;
+}
+.tset > input::placeholder {
+	font-weight: 300;
+}
+.driverintroduce::placeholder {
+	font-weight: 300;
+}
 .s2 {
+	font-family: 'Noto Sans Korean';
+	font-weight: 600;
+	font-size: 18px;
+	position: absolute;
+	top: 200px;
+	left: 360px;
 	width: 720px;
 	margin: 0px auto;
 	padding: 50px;
@@ -38,43 +80,79 @@
 	width: 125px;
 	height: 50px;
 }
+
+
 .sset {
-	margin: 30px 0px 50px 0px;
+	margin: 30px 0px 30px 0px;
+	position:relative;
+	height: 235px;
 }
-.sset > img {
-	width: 50px;
+.sset > p {
+	position: absolute;
+	top: 30px;
+}
+.sset > .inputdiv {
+	width: 630px;
+	position: absolute;
+	top: 70px;
+	left: 20px;
+}
+.sset >	 img {
+	position: absolute;
+	top: 93px;
+	width: 15px;
+	height: 73px;
+}
+.inputdiv input {
+	width: 510px;
 	height: 50px;
-	float: left;
-}
-.sset > input {
-	width: 440px;
 }
 .splace {
-	display: block;
+	margin: 0px 0px 15px 0px;
 }
-.sset > button > img {
-	width: 30px;
-	height: 25px;
+.sset > .inputdiv > .ae-btn {
+	position:absolute;
+	top: 20px;
+	left: 515px;
+	width:16px;
+	height: 20px;
 }
-.sset > button {
-	position:relative;
-	top: 8px;
-	margin: 5px 0px 0px 0px;
-	height: 28px;
+.ae-btn:hover {
+	cursor: pointer;
 }
+.sset > .inputdiv > .ic-btn {
+	position:absolute;
+	top: 92px;
+	left: 514px;
+	width: 20px;
+	height: 20px;
+}
+.ic-btn:hover {
+	cursor: pointer;
+}
+
+
 .tset > input {
-	width: 300px;
+	width: 320px;
 	height: 50px;
 	margin: 10px 0px 50px 0px;
 }
+.tset > table {
+	margin: 10px 0px 0px 0px;
+}
 .deepsel td {
-	padding: 5px 100px 5px 0px;
+	padding: 10px 40px 5px 0px;
+	width: 285px;
 }
 .td2 {
 	margin: 0px 0px 0px 30px;
 }
 .deepsel {
 	margin: 5px 0px 50px 0px;
+}
+.selected {
+	color: #4454a1;
+	font-weight: bold;
 }
 .driverintroduce {
 	width: 620px;

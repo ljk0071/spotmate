@@ -11,8 +11,8 @@
 <script src="/assets/jqueryUi/jquery-ui.js"></script>
 <script src="/assets/MultiDatesPicker/jquery-ui.multidatespicker.js"></script>
 <link rel="stylesheet" href="/assets/jqueryUi/jquery-ui.min.css">
-<link rel="stylesheet" href="/assets/css/spotMateMain.css">
-<link rel="stylesheet" href="/assets/css/carpooldriver.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/datepicker.css">
 </head>
 <body>
@@ -20,12 +20,12 @@
 <c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 <div class="contents">
 	<div class="top">
-		<div><span>SPOT CARPOOL<br>
-		이동 경로 등록하기</span>
+		<div><span>SPOT CARPOOL</span>
+		<p>이동 경로 등록하기</p>
 		</div>
-		<div><p>드라이버님이 이동하시는 경로를 등록해주시면<br>
+		<p>드라이버님이 이동하시는 경로를 등록해주시면<br>
 		같이 이동을 원하는 유저가 카풀을 신청 할 예정입니다.</p>
-		</div>
+		
 		<span>*필수 입력사항</span>
 	</div>
 	<div class="s2">
@@ -37,28 +37,32 @@
 			</div>
 			<div class="sset">
 				<p>드라이버님의 이동 경로를 입력해주세요*</p>
-				<img src="assets/images/bluelogo.png">
-				<input type="text" class="splace" placeholder="출발지를 입력하세요">
-				<input type="text" placeholder="도착지를 입력하세요">
-				<button><img src="assets/images/bluelogo.png"></button>
+				
+				<img src="assets/images/map_line_02.png">
+				<div class="inputdiv">
+					<input type="text" class="splace" placeholder="출발지를 입력하세요">
+					<img class="ae-btn" src="assets/images/arrows_exchange.png">
+					<a href="./main6" target="blank"><input type="text" class="eplace" placeholder="도착지를 입력하세요"></a>
+					<img class="ic-btn" src="assets/images/ico_close.png">
+				</div>
 			</div>
 			<div class="tset">
-				<p>탑승 가능한 인원 수</p>
-				<input type="number" placeholder="1명"> 
+				<p>탑승 가능한 인원 수*</p>
+				<input type="number" min=1 placeholder="1명"> 
 				<p>차량 상세조건</p>
 				<div class="deepsel">
 					<table>
 						<tr>
-							<td><input type="checkbox" name="smoke" value="nosmoke">비흡연자</td>
-							<td ><input class="td2" type="checkbox" name="phonecharge" value="phonecharge">핸드폰 충전기 이용 가능</td>
+							<td><input type="checkbox" id="smoke" name="smoke" value="nosmoke"><label for="smoke">비흡연자</label></td>
+							<td ><input class="td2" type="checkbox" id="phonecharge" name="phonecharge" value="phonecharge"><label for="phonecharge">핸드폰 충전기 이용 가능</label></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="wifi" value="wifi">차량 와이파이 이용 가능</td>
-							<td><input class="td2" type="checkbox" name="silence" value="silence">조용하게 가는 것을 선호</td>
+							<td><input type="checkbox" name="wifi" id="wifi" value="wifi"><label for="wifi">차량 와이파이 이용 가능</label></td>
+							<td><input class="td2" type="checkbox" id="silence" name="silence" value="silence"><label for="silence">조용하게 가는 것을 선호</label></td>
 						</tr>
 						<tr>
-							<td><input type="checkbox"  name="drivergender" value="female">여성 드라이버</td>
-							<td><input class="td2" type="checkbox" name="pet" value="pet">반려동물 탑승 가능</td>
+							<td><input type="checkbox" id="drivergender" name="drivergender" value="female"><label for="drivergender">여성 드라이버</label></td>
+							<td><input class="td2" type="checkbox" id="pet" name="pet" value="pet"><label for="pet">반려동물 탑승 가능</label></td>
 						</tr>
 					</table>
 				</div>
@@ -74,6 +78,15 @@
 </div>
 </body>
 <script type="text/javascript">
+$(document).ready(function() {
+	$("input:checkbox").on('click', function() {
+	      if ( $(this).prop('checked') ) {
+	        $(this).parent().addClass("selected");
+	      } else {
+	        $(this).parent().removeClass("selected");
+	      }
+	    });
+	});
 // $(function() {
 //     //input을 datepicker로 선언
 //     $("#datepicker").datepicker({
@@ -100,5 +113,19 @@
 $("#datepicker").multiDatesPicker();
 // $("#datepicker").multiDatesPicker('gotDate', new Date());
 var dates = $('#datepicker').multiDatesPicker('getDates');
+$(".ae-btn").on("click", function() {
+	var splace = $(".splace").val();
+	var eplace = $(".eplace").val();
+	
+	$(".splace").val(eplace);
+	$(".eplace").val(splace);
+})
+$(".ic-btn").on("click", function() {
+	$(".splace").val("");
+	$(".eplace").val("");
+})
+$(".splace").on("click", function() {
+	window.open("main6", "a", "width=1210, height=730, left=300, top=100, resizable = no, scrollbars = no");
+})
 </script>
 </html>
