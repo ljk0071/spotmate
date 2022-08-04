@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+.w-addr1::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+.s2-addr {
+	margin: 10px 0px 10px 0px;
+}
+.s2-addr::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+.w-addr1 {
+	margin: 10px 0px 10px 0px;
+}
+.w-addr2::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+.w-addr2 {
+	margin: 10px 0px 10px 0px;
+}
+.w-addr3::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+.w-addr3 {
+	margin: 10px 0px 8px 0px;
+}
+.w-addr4::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+.w-addr4 {
+	margin: 10px 0px 8px 0px;
+}
+.w-addr5::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+.w-addr5 {
+	margin: 10px 0px 8px 0px;
+}
+.e2-addr {
+	margin: 10px 0px 10px 0px;
+}
+.e2-addr::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+
+.s-sec > .mate-img {
+	position: absolute;
+	top: 88px;
+	width: 15px;
+	height: 113px;
+}
+
+.ia-btn {
+	display:inline;
+	margin:0px 0px 0px 5px;
+/* 	position:absolute; */
+/* 	top: 20px; */
+/* 	left: 514px; */
+/* 	width: 20px; */
+/* 	height: 20px; */
+}
+.ia-btn:hover {
+	cursor: pointer;
+}
+.id-btn1 {
+	display:inline;
+	margin:0px 0px 0px 5px;
+/* 	position:absolute; */
+/* 	top: 70px; */
+/* 	left: 514px; */
+/* 	width: 20px; */
+/* 	height: 20px; */
+}
+.id-btn1:hover {
+	cursor: pointer;
+}
+.id-btn2 {
+	display:inline;
+	margin:0px 0px 0px 5px;
+/* 	position:absolute; */
+/* 	top: 160px; */
+/* 	left: 514px; */
+/* 	width: 20px; */
+/* 	height: 20px; */
+}
+.id-btn2:hover {
+	cursor: pointer;
+}
+.id-btn3 {
+	display:inline;
+	margin:0px 0px 0px 5px;
+/* 	position:absolute; */
+/* 	top: 180px; */
+/* 	left: 514px; */
+/* 	width: 20px; */
+/* 	height: 20px; */
+}
+.id-btn3:hover {
+	cursor: pointer;
+}
+.id-btn4 {
+	display:inline;
+	margin:0px 0px 0px 5px;
+/* 	position:absolute; */
+/* 	top: 200px; */
+/* 	left: 514px; */
+/* 	width: 20px; */
+/* 	height: 20px; */
+}
+.id-btn4:hover {
+	cursor: pointer;
+}
+.id-btn5 {
+	display:inline;
+	margin:0px 0px 0px 5px;
+/* 	position:absolute; */
+/* 	top: 220px; */
+/* 	left: 514px; */
+/* 	width: 20px; */
+/* 	height: 20px; */
+}
+.id-btn5:hover {
+	cursor: pointer;
+}
+.ic2-btn {
+	display:inline;
+	margin:0px 0px 0px 5px;
+/* 	position:absolute; */
+/* 	top: 120px; */
+/* 	left: 514px; */
+/* 	width: 20px; */
+/* 	height: 20px; */
+}
+.ic2-btn:hover {
+	cursor: pointer;
+}

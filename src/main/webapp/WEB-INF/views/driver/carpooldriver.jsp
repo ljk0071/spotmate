@@ -8,10 +8,10 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>Insert title here</title>
 <script type="text/javascript" src="/assets/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c6544d76c3912585c75cfd126a875faf&libraries=services,clusterer,drawing"></script>
 <script src="/assets/jqueryUi/jquery-ui.js"></script>
 <script src="/assets/MultiDatesPicker/jquery-ui.multidatespicker.js"></script>
 <link rel="stylesheet" href="/assets/jqueryUi/jquery-ui.min.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/datepicker.css">
 </head>
@@ -28,41 +28,45 @@
 		
 		<span>*필수 입력사항</span>
 	</div>
-	<div class="s2">
+	<div class="mid">
 		<form action="../" method="get">
 			<p>등록하신 날짜와 출발시간입니다.</p>
-			<div class="fset">
-				<input type="text" id="datepicker" class="sdate" placeholder="2022.07.20 - 2022.08.20" autocomplete="off">
-				<input type="text" class="stime" placeholder="아침 8:00">
+			<div class="f-sec">
+				<input type="text" id="datepicker" class="s-date" placeholder="2022.07.20 - 2022.08.20" autocomplete="off">
+				<input type="text" class="s-time" placeholder="아침 8:00">
 			</div>
-			<div class="sset">
+			<div class="s-sec">
 				<p>드라이버님의 이동 경로를 입력해주세요*</p>
 				
 				<img src="assets/images/map_line_02.png">
-				<div class="inputdiv">
-					<input type="text" class="splace" placeholder="출발지를 입력하세요">
+				<div id="input-div">
+					<input type="text" value="" id="s-addr" class="s-addr" placeholder="출발지를 입력하세요">
+					<input type="hidden" value="" class="s-lat">
+					<input type="hidden" value="" class="s-lng">
 					<img class="ae-btn" src="assets/images/arrows_exchange.png">
-					<a href="./main6" target="blank"><input type="text" class="eplace" placeholder="도착지를 입력하세요"></a>
+					<input type="text" value="" id="e-addr" class="e-addr" placeholder="도착지를 입력하세요">
+					<input type="hidden" value="" class="e-lat">
+					<input type="hidden" value="" class="e-lng">
 					<img class="ic-btn" src="assets/images/ico_close.png">
 				</div>
 			</div>
-			<div class="tset">
+			<div class="t-sec">
 				<p>탑승 가능한 인원 수*</p>
 				<input type="number" min=1 placeholder="1명"> 
 				<p>차량 상세조건</p>
 				<div class="deepsel">
 					<table>
 						<tr>
-							<td><input type="checkbox" id="smoke" name="smoke" value="nosmoke"><label for="smoke">비흡연자</label></td>
-							<td ><input class="td2" type="checkbox" id="phonecharge" name="phonecharge" value="phonecharge"><label for="phonecharge">핸드폰 충전기 이용 가능</label></td>
+							<td><input type="checkbox" id="smoke" name="smoke" value="nosmoke"><label for="smoke"></label>비흡연자</td>
+							<td ><input class="td2" type="checkbox" id="phonecharge" name="phonecharge" value="phonecharge"><label for="phonecharge"></label>핸드폰 충전기 이용 가능</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" name="wifi" id="wifi" value="wifi"><label for="wifi">차량 와이파이 이용 가능</label></td>
-							<td><input class="td2" type="checkbox" id="silence" name="silence" value="silence"><label for="silence">조용하게 가는 것을 선호</label></td>
+							<td><input type="checkbox" name="wifi" id="wifi" value="wifi"><label for="wifi"></label>차량 와이파이 이용 가능</td>
+							<td><input class="td2" type="checkbox" id="silence" name="silence" value="silence"><label for="silence"></label>조용하게 가는 것을 선호</td>
 						</tr>
 						<tr>
-							<td><input type="checkbox" id="drivergender" name="drivergender" value="female"><label for="drivergender">여성 드라이버</label></td>
-							<td><input class="td2" type="checkbox" id="pet" name="pet" value="pet"><label for="pet">반려동물 탑승 가능</label></td>
+							<td><input type="checkbox" id="drivergender" name="drivergender" value="female"><label for="drivergender"></label>여성 드라이버</td>
+							<td><input class="td2" type="checkbox" id="pet" name="pet" value="pet"><label for="pet"></label>반려동물 탑승 가능</td>
 						</tr>
 					</table>
 				</div>
@@ -114,18 +118,21 @@ $("#datepicker").multiDatesPicker();
 // $("#datepicker").multiDatesPicker('gotDate', new Date());
 var dates = $('#datepicker').multiDatesPicker('getDates');
 $(".ae-btn").on("click", function() {
-	var splace = $(".splace").val();
-	var eplace = $(".eplace").val();
+	var saddr = $(".s-addr").val();
+	var eaddr = $(".e-addr").val();
 	
-	$(".splace").val(eplace);
-	$(".eplace").val(splace);
+	$(".s-addr").val(eaddr);
+	$(".e-addr").val(saddr);
 })
 $(".ic-btn").on("click", function() {
-	$(".splace").val("");
-	$(".eplace").val("");
+	$(".s-addr").val("");
+	$(".e-addr").val("");
 })
-$(".splace").on("click", function() {
-	window.open("main6", "a", "width=1210, height=730, left=300, top=100, resizable = no, scrollbars = no");
+$("#s-addr").on("click", function() {
+	window.open("ssp", "child", "width=1350, height=820, left=300, top=100");
+})
+$("#e-addr").on("click", function() {
+	window.open("sep", "child", "width=1350, height=820, left=300, top=100");
 })
 </script>
 </html>

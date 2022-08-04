@@ -214,7 +214,11 @@
 	</div>
 	<div id="clickLatlng"></div>
 	<button class="search-btn" onclick="setParentText()" style="position:absolute; top:25px; left: 1100px; z-index:1;">장소 확정</button>
-	<input type="text" name="searchVo" value="" id="searchVo" style="position:absolute; top:125px; left: 1100px; z-index:1;">
+	<input type="hidden" value="" id="addr" style="position:absolute; top:125px; left: 1100px; z-index:1;">
+	<input type="hidden" value="" id="lat" style="position:absolute; top:125px; left: 1100px; z-index:1;">
+	<input type="hidden" value="" id="lng" style="position:absolute; top:125px; left: 1100px; z-index:1;">
+	<input type="hidden" value="" id="title" style="position:absolute; top:125px; left: 1100px; z-index:1;">
+	
 	<script type="text/javascript"
 		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c6544d76c3912585c75cfd126a875faf&libraries=services,clusterer,drawing"></script>
 	<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
@@ -244,10 +248,13 @@
 		var lng = "";
 		var addr = "";
 		// 키워드로 장소를 검색합니다
+		console.log();
 		searchPlaces();
 		clickPos();
 		function setParentText() {
-			opener.$(".splace").val($("#searchVo").val())
+			opener.$("#s-addr").val($("#addr").val())
+			opener.$(".s-lat").val($("#lat").val())
+			opener.$(".s-lng").val($("#lng").val())
 			window.close() 
         }
 		// 키워드 검색을 요청하는 함수입니다
@@ -318,8 +325,10 @@
 								data : JSON.stringify(search),
 								dataType : "json",
 								success : function(result) {
-									console.log(result);
-									$("#searchVo").val(search);
+									$("#addr").val(result.addr);
+									$("#lat").val(result.lat);
+									$("#lng").val(result.lng);
+									$("#title").val("");
 								},
 								error : function(XHR, status, error) {
 									console.error(status + " : " + error);
@@ -345,8 +354,10 @@
 								data : JSON.stringify(search),
 								dataType : "json",
 								success : function(result) {
-									console.log(result);
-									$("#searchVo").val(result);
+									$("#addr").val(result.addr);
+									$("#lat").val(result.lat);
+									$("#lng").val(result.lng);
+									$("#title").val("");
 								},
 								error : function(XHR, status, error) {
 									console.error(status + " : " + error);
@@ -400,9 +411,10 @@
 							data : JSON.stringify(search),
 							dataType : "json",
 							success : function(result) {
-								console.log(result);
-								$("#searchVo").val(result);
-// 								$("#keyword").val("방배")
+								$("#addr").val(result.addr);
+								$("#lat").val(result.lat);
+								$("#lng").val(result.lng);
+								$("#title").val(result.title);
 							},
 							error : function(XHR, status, error) {
 								console.error(status + " : " + error);
@@ -543,9 +555,10 @@
 					data : JSON.stringify(search),
 					dataType : "json",
 					success : function(result) {
-						console.log(result);
-						$("#searchVo").val(result);
-// 						console.log(result);
+						$("#addr").val(result.addr);
+						$("#lat").val(result.lat);
+						$("#lng").val(result.lng);
+						$("#title").val(result.title);
 					},
 					error : function(XHR, status, error) {
 						console.error(status + " : " + error);

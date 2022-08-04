@@ -90,6 +90,18 @@ public class Main {
 	public String test() throws IOException {
 		return "/spotcarpool/spotMain";
 	}
+	@RequestMapping(value="/ssp", method={RequestMethod.GET, RequestMethod.POST})
+	public String ssp() throws IOException {
+		return "/driver/ssp";
+	}
+	@RequestMapping(value="/swp", method={RequestMethod.GET, RequestMethod.POST})
+	public String swp() throws IOException {
+		return "/driver/swp";
+	}
+	@RequestMapping(value="/sep", method={RequestMethod.GET, RequestMethod.POST})
+	public String sep() throws IOException {
+		return "/driver/sep";
+	}
 	
 	@ResponseBody
 	@RequestMapping(value="/search", method={RequestMethod.GET, RequestMethod.POST})
