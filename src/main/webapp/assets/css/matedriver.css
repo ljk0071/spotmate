@@ -1,143 +1,229 @@
 @charset "UTF-8";
+/* placeholder */
+.mate-s-date::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
 
-.w-addr1::placeholder {
+.mate-s-addr::placeholder {
 	font-weight: 300;
 	color: #e8e7e7
 }
-.s2-addr {
-	margin: 10px 0px 10px 0px;
-}
-.s2-addr::placeholder {
+
+.mate-s-time::placeholder {
 	font-weight: 300;
 	color: #e8e7e7
 }
-.w-addr1 {
-	margin: 10px 0px 10px 0px;
+
+.mate-e-addr::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
 }
+
 .w-addr2::placeholder {
 	font-weight: 300;
 	color: #e8e7e7
 }
-.w-addr2 {
-	margin: 10px 0px 10px 0px;
-}
+
 .w-addr3::placeholder {
 	font-weight: 300;
 	color: #e8e7e7
 }
-.w-addr3 {
-	margin: 10px 0px 8px 0px;
-}
+
 .w-addr4::placeholder {
 	font-weight: 300;
 	color: #e8e7e7
 }
-.w-addr4 {
-	margin: 10px 0px 8px 0px;
-}
+
 .w-addr5::placeholder {
 	font-weight: 300;
 	color: #e8e7e7
 }
-.w-addr5 {
-	margin: 10px 0px 8px 0px;
-}
-.e2-addr {
-	margin: 10px 0px 10px 0px;
-}
-.e2-addr::placeholder {
+
+.w-addr6::placeholder {
 	font-weight: 300;
 	color: #e8e7e7
 }
 
-.s-sec > .mate-img {
-	position: absolute;
-	top: 88px;
-	width: 15px;
-	height: 113px;
+.w-time2::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
 }
 
-.ia-btn {
-	display:inline;
-	margin:0px 0px 0px 5px;
-/* 	position:absolute; */
-/* 	top: 20px; */
-/* 	left: 514px; */
-/* 	width: 20px; */
-/* 	height: 20px; */
+.w-time3::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
 }
-.ia-btn:hover {
+
+.w-time4::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+
+.w-time5::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+
+.w-time6::placeholder {
+	font-weight: 300;
+	color: #e8e7e7
+}
+/* placeholder */
+
+/* hover */
+.s-sec .ia-btn:hover {
 	cursor: pointer;
 }
-.id-btn1 {
-	display:inline;
-	margin:0px 0px 0px 5px;
-/* 	position:absolute; */
-/* 	top: 70px; */
-/* 	left: 514px; */
-/* 	width: 20px; */
-/* 	height: 20px; */
-}
-.id-btn1:hover {
+
+.s-sec .id-btn2:hover {
 	cursor: pointer;
 }
-.id-btn2 {
-	display:inline;
-	margin:0px 0px 0px 5px;
-/* 	position:absolute; */
-/* 	top: 160px; */
-/* 	left: 514px; */
-/* 	width: 20px; */
-/* 	height: 20px; */
-}
-.id-btn2:hover {
+
+.s-sec .id-btn3:hover {
 	cursor: pointer;
 }
-.id-btn3 {
-	display:inline;
-	margin:0px 0px 0px 5px;
-/* 	position:absolute; */
-/* 	top: 180px; */
-/* 	left: 514px; */
-/* 	width: 20px; */
-/* 	height: 20px; */
-}
-.id-btn3:hover {
+
+.s-sec .id-btn4:hover {
 	cursor: pointer;
 }
-.id-btn4 {
-	display:inline;
-	margin:0px 0px 0px 5px;
-/* 	position:absolute; */
-/* 	top: 200px; */
-/* 	left: 514px; */
-/* 	width: 20px; */
-/* 	height: 20px; */
-}
-.id-btn4:hover {
+
+.s-sec .id-btn5:hover {
 	cursor: pointer;
 }
-.id-btn5 {
-	display:inline;
-	margin:0px 0px 0px 5px;
-/* 	position:absolute; */
-/* 	top: 220px; */
-/* 	left: 514px; */
-/* 	width: 20px; */
-/* 	height: 20px; */
-}
-.id-btn5:hover {
+
+.s-sec .id-btn6:hover {
 	cursor: pointer;
 }
-.ic2-btn {
-	display:inline;
-	margin:0px 0px 0px 5px;
-/* 	position:absolute; */
-/* 	top: 120px; */
-/* 	left: 514px; */
-/* 	width: 20px; */
-/* 	height: 20px; */
-}
-.ic2-btn:hover {
+
+.s-sec .mate-ic-btn:hover {
 	cursor: pointer;
+}
+/* hover */
+.f-sec .mate-s-date {
+	width: 720px;
+	height: 50px;
+}
+
+.s-sec #input-div #addTable {
+	display: inline;
+}
+
+.s-sec .mate-s-addr {
+	margin: 10px 0px 10px 0px;
+	width: 400px;
+	height: 30px;
+}
+
+.s-sec .w-addr2 {
+	margin: 10px 0px 10px 0px;
+	width: 400px;
+	height: 30px;
+}
+
+.s-sec .w-addr3 {
+	margin: 10px 0px 8px 0px;
+	width: 400px;
+	height: 30px;
+}
+
+.s-sec .w-addr4 {
+	margin: 10px 0px 8px 0px;
+	width: 400px;
+	height: 30px;
+}
+
+.s-sec .w-addr5 {
+	margin: 10px 0px 8px 0px;
+	width: 400px;
+	height: 30px;
+}
+
+.s-sec .w-addr6 {
+	margin: 10px 0px 10px 0px;
+	width: 400px;
+	height: 30px;
+}
+
+.s-sec .mate-e-addr {
+	margin: 10px 0px 10px 0px;
+	width: 400px;
+	height: 30px;
+}
+
+.s-sec .mate-s-time {
+	width: 200px;
+	height: 30px;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .w-time2 {
+	width: 200px;
+	height: 30px;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .w-time3 {
+	width: 200px;
+	height: 30px;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .w-time4 {
+	width: 200px;
+	height: 30px;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .w-time5 {
+	width: 200px;
+	height: 30px;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .w-time6 {
+	width: 200px;
+	height: 30px;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .mate-img {
+	width: 15px;
+	height: 113px;
+	margin: 15px 0px 0px 0px;
+}
+
+.s-sec .ia-btn {
+	display: inline;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .id-btn2 {
+	display: inline;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .id-btn3 {
+	display: inline;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .id-btn4 {
+	display: inline;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .id-btn5 {
+	display: inline;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .id-btn6 {
+	display: inline;
+	margin: 0px 0px 0px 10px;
+}
+
+.s-sec .mate-ic-btn {
+	display: inline;
+	margin: 0px 0px 0px 10px;
 }

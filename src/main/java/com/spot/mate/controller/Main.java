@@ -94,9 +94,25 @@ public class Main {
 	public String ssp() throws IOException {
 		return "/driver/ssp";
 	}
-	@RequestMapping(value="/swp", method={RequestMethod.GET, RequestMethod.POST})
-	public String swp() throws IOException {
-		return "/driver/swp";
+	@RequestMapping(value="/swp2", method={RequestMethod.GET, RequestMethod.POST})
+	public String swp2() throws IOException {
+		return "/driver/swp2";
+	}
+	@RequestMapping(value="/swp3", method={RequestMethod.GET, RequestMethod.POST})
+	public String swp3() throws IOException {
+		return "/driver/swp3";
+	}
+	@RequestMapping(value="/swp4", method={RequestMethod.GET, RequestMethod.POST})
+	public String swp4() throws IOException {
+		return "/driver/swp4";
+	}
+	@RequestMapping(value="/swp5", method={RequestMethod.GET, RequestMethod.POST})
+	public String swp5() throws IOException {
+		return "/driver/swp5";
+	}
+	@RequestMapping(value="/swp6", method={RequestMethod.GET, RequestMethod.POST})
+	public String swp6() throws IOException {
+		return "/driver/swp6";
 	}
 	@RequestMapping(value="/sep", method={RequestMethod.GET, RequestMethod.POST})
 	public String sep() throws IOException {

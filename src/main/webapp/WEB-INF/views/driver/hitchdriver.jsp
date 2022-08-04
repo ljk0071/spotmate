@@ -16,9 +16,9 @@
 <link rel="stylesheet" href="/assets/css/datepicker.css">
 </head>
 <body>
-<div id="wrap"  class="clearfix">
+<body>
 <c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
-<div class="contents">
+<div class="inner">
 	<div class="top">
 		<div><span>SPOT HITCHHIKE</span>
 		<p>이동 경로 등록하기</p>
@@ -29,7 +29,7 @@
 		<span>*필수 입력사항</span>
 	</div>
 	<div class="mid">
-		<form action="../" method="get">
+		<form action="" method="get">
 			<p>등록하신 날짜와 출발시간입니다.</p>
 			<div class="f-sec">
 				<input type="text" id="datepicker" class="s-date" placeholder="2022.07.20 - 2022.08.20" autocomplete="off">
@@ -38,39 +38,39 @@
 			<div class="s-sec">
 				<p>드라이버님의 이동 경로를 입력해주세요*</p>
 				
-				<img src="assets/images/map_line_02.png">
 				<div id="input-div">
-					<input type="text" value="" id="s-addr" class="s-addr" placeholder="출발지를 입력하세요">
-					<input type="hidden" value="" class="s-lat">
-					<input type="hidden" value="" class="s-lng">
-					<img class="ae-btn" src="assets/images/arrows_exchange.png">
-					<input type="text" value="" id="e-addr" class="e-addr" placeholder="도착지를 입력하세요">
-					<input type="hidden" value="" class="e-lat">
-					<input type="hidden" value="" class="e-lng">
-					<img class="ic-btn" src="assets/images/ico_close.png">
+				<img src="assets/images/map_line_02.png">
+				<table>
+					<tr>
+						<td><input type="text" value="" id="s-addr" class="s-addr" placeholder="출발지를 입력하세요"><img class="ae-btn" src="assets/images/arrows_exchange.png"></td>
+						<td><input type="hidden" value="" class="s-lat"></td>
+						<td><input type="hidden" value="" class="s-lng"></td>
+					</tr>
+					<tr>
+					 	<td><input type="text" value="" id="e-addr" class="e-addr" placeholder="도착지를 입력하세요"><img class="ic-btn" src="assets/images/ico_close.png"></td>
+						<td><input type="hidden" value="" class="e-lat"></td>
+						<td><input type="hidden" value="" class="e-lng"></td>
+				</table>
 				</div>
-				<div id="map" style="width: 620px; height:200px; position:absolute; top: 200px;"></div>
 			</div>
 			<div class="t-sec">
 				<p>탑승 가능한 인원 수*</p>
 				<input type="number" min=1 placeholder="1명"> 
 				<p>차량 상세조건</p>
-				<div class="deepsel">
-					<table>
-						<tr>
-							<td><input type="checkbox" id="smoke" name="smoke" value="nosmoke"><label for="smoke"></label>비흡연자</td>
-							<td ><input class="td2" type="checkbox" id="phonecharge" name="phonecharge" value="phonecharge"><label for="phonecharge"></label>핸드폰 충전기 이용 가능</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="wifi" id="wifi" value="wifi"><label for="wifi"></label>차량 와이파이 이용 가능</td>
-							<td><input class="td2" type="checkbox" id="silence" name="silence" value="silence"><label for="silence"></label>조용하게 가는 것을 선호</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" id="drivergender" name="drivergender" value="female"><label for="drivergender"></label>여성 드라이버</td>
-							<td><input class="td2" type="checkbox" id="pet" name="pet" value="pet"><label for="pet"></label>반려동물 탑승 가능</td>
-						</tr>
-					</table>
-				</div>
+				<table class="deepsel">
+					<tr>
+						<td><input type="checkbox" id="smoke" name="smoke" value="nosmoke"><label for="smoke"></label>비흡연자</td>
+						<td><input class="td2" type="checkbox" id="phonecharge" name="phonecharge" value="phonecharge"><label for="phonecharge"></label>핸드폰 충전기 이용 가능</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="wifi" id="wifi" value="wifi"><label for="wifi"></label>차량 와이파이 이용 가능</td>
+						<td><input class="td2" type="checkbox" id="silence" name="silence" value="silence"><label for="silence"></label>조용하게 가는 것을 선호</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="drivergender" name="drivergender" value="female"><label for="drivergender"></label>여성 드라이버</td>
+						<td><input class="td2" type="checkbox" id="pet" name="pet" value="pet"><label for="pet"></label>반려동물 탑승 가능</td>
+					</tr>
+				</table>
 				<p>드라이버님을 소개해주세요*</p>
 				<textarea class="driverintroduce" name="introduce" placeholder="하고싶은 말을 적어주세요!"></textarea>
 			</div>
@@ -80,7 +80,6 @@
 	</div>
 </div>
 <c:import url="/WEB-INF/views/includes/footer.jsp"></c:import>
-</div>
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -92,12 +91,6 @@ $(document).ready(function() {
 	      }
 	    });
 	});
-	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-	mapOption = { 
-	    center: new kakao.maps.LatLng(37.48436301061165, 126.9922281879226), // 지도의 중심좌표
-	    level: 2 // 지도의 확대 레벨 
-	};
-	var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 // $(function() {
 //     //input을 datepicker로 선언
 //     $("#datepicker").datepicker({
@@ -121,9 +114,10 @@ $(document).ready(function() {
 //     //초기값을 오늘 날짜로 설정해줘야 합니다.
 //     $('#datepicker').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)            
 // });
-$("#datepicker").multiDatesPicker();
+// $("#datepicker").multiDatesPicker();
 // $("#datepicker").multiDatesPicker('gotDate', new Date());
-var dates = $('#datepicker').multiDatesPicker('getDates');
+// $("#datepicker").multiDatesPicker();
+// var dates = $('#datepicker').multiDatesPicker('getDates');
 $(".ae-btn").on("click", function() {
 	var saddr = $(".s-addr").val();
 	var slat = $(".s-lat").val();
@@ -142,10 +136,6 @@ $(".ae-btn").on("click", function() {
 $(".ic-btn").on("click", function() {
 	$(".s-addr").val("");
 	$(".e-addr").val("");
-	$(".s-lat").val("");
-	$(".s-lng").val("");
-	$(".e-lat").val("");
-	$(".e-lng").val("");
 })
 $("#s-addr").on("click", function() {
 	window.open("ssp", "child", "width=1350, height=820, left=300, top=100");

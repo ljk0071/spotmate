@@ -14,9 +14,8 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-<div id="wrap">
 <c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
-<div class="contents">
+<div class="inner">
 	<div class="top">
 		<div>
 		<span>MATE PRODUCT</span>
@@ -31,27 +30,21 @@
 		<form>
 			<p>등록하신 날짜와 출발시간입니다.</p>
 			<div class="f-sec">
-				<input type="text" id="datepicker" class="s-date" placeholder="2022.07.20 - 2022.08.20">
-				<input type="text" class="s-time" placeholder="아침 8:00">
+				<input type="text" id="datepicker" class="mate-s-date" placeholder="2022.07.20 - 2022.08.20">
 			</div>
 			<div class="s-sec">
 				<p>드라이버님의 이동 경로를 입력해주세요*</p>
 				
-				<img class="mate-img" src="assets/images/map_line_03.png">
 				<div id="input-div">
+				<img class="mate-img" src="assets/images/map_line_03.png">
 				<table id="addTable">
 					<tr>
-						<td><input type="text" value="" id="s-addr" class="s2-addr" placeholder="출발지를 입력하세요"><img class="ia-btn" src="assets/images/ico_add.png" onclick="insRow()"></td>
+						<td><input type="text" value="" id="s-addr" class="mate-s-addr" placeholder="출발지를 입력하세요"><input type="text" value="" class="mate-s-time" placeholder="아침 8:00"><img class="ia-btn" src="assets/images/ico_add.png" onclick="insRow()"></td>
 						<td><input type="hidden" value="" class="s-lat"></td>
 						<td><input type="hidden" value="" class="s-lng"></td>
 					</tr>
 					<tr>
-						<td><input type="text" value="" class="w-addr1" placeholder="경유지를 입력하세요"><img class="id-btn1" src="assets/images/ico_minus.png" onclick="remove()"></td>
-						<td><input type="hidden" value="" class="w-lat1"></td>
-						<td><input type="hidden" value="" class="w-lng1"></td>
-					</tr>
-					<tr>
-						<td><input type="text" value="" id="e-addr" class="e2-addr" placeholder="도착지를 입력하세요"><img class="ic2-btn" src="assets/images/ico_close.png"></td>
+						<td><input type="text" value="" id="e-addr" class="mate-e-addr" placeholder="도착지를 입력하세요"><img class="mate-ic-btn" src="assets/images/ico_close.png"></td>
 						<td><input type="hidden" value="" class="e-lat"></td>
 						<td><input type="hidden" value="" class="e-lng"></td>
 					</tr>
@@ -62,7 +55,6 @@
 				<p>탑승 가능한 인원 수*</p>
 				<input type="number" min=1 placeholder="1명"> 
 				<p>차량 상세조건</p>
-				<div class="deepsel">
 					<table>
 						<tr>
 							<td><input type="checkbox" id="smoke" name="smoke" value="nosmoke"><label for="smoke">비흡연자</label></td>
@@ -77,7 +69,6 @@
 							<td><input class="td2" type="checkbox" id="pet" name="pet" value="pet"><label for="pet">반려동물 탑승 가능</label></td>
 						</tr>
 					</table>
-				</div>
 				<p>드라이버님을 소개해주세요*</p>
 				<textarea class="driverintroduce" name="introduce" placeholder="하고싶은 말을 적어주세요!"></textarea>
 			</div>
@@ -87,7 +78,6 @@
 	</div>
 </div>
 <c:import url="/WEB-INF/views/includes/footer.jsp"></c:import>
-</div>
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -99,56 +89,83 @@ $(document).ready(function() {
 	      }
 	    });
 	});
-var index = 2;
+var index = 1;
 var oTbl;
-$(function() {
-    $("#datepicker").datepicker({
-        dateFormat: 'yy-mm-dd' //달력 날짜 형태
-        ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
-        ,changeYear: true //option값 년 선택 가능
-        ,changeMonth: true //option값  월 선택 가능                
-        ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
-        ,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
-        ,yearSuffix: "년" //달력의 년도 부분 뒤 텍스트
-        ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-        ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
-        ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
-        ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 Tooltip
-        ,minDate: "-5Y" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-        ,maxDate: "+5y" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
-    });                    
+// $(function() {
+//     $("#datepicker").datepicker({
+//         dateFormat: 'yy-mm-dd' //달력 날짜 형태
+//         ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
+//         ,changeYear: true //option값 년 선택 가능
+//         ,changeMonth: true //option값  월 선택 가능                
+//         ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+//         ,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
+//         ,yearSuffix: "년" //달력의 년도 부분 뒤 텍스트
+//         ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+//         ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
+//         ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
+//         ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 Tooltip
+//         ,minDate: "-5Y" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+//         ,maxDate: "+5y" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
+//     });                    
     
-    //초기값을 오늘 날짜로 설정해줘야 합니다.
-    $('#datepicker').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)            
-});
+//     //초기값을 오늘 날짜로 설정해줘야 합니다.
+//     $('#datepicker').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)            
+// });
 
 //Row 추가
 function insRow() {
-	if (index == 6) {
+	index++;
+	if (index == 7) {
 		alert("경유지는 5개 이상 추가할 수 없습니다.");
 		return;
+	} else if (index == 2) {
+		$(".s-sec").attr("style", "height:250px;");
+	} else if (index == 3) {
+		$(".s-sec").attr("style", "height:300px;");
+	} else if (index == 4) {
+		$(".s-sec").attr("style", "height:350px;");
+	} else if (index == 5) {
+		$(".s-sec").attr("style", "height:400px;");
+	} else if (index == 6) {
+		$(".s-sec").attr("style", "height:450px;");
 	}
+	
 	oTbl = document.getElementById("addTable");
 	var oRow = oTbl.insertRow();
 	oRow.onmouseover=function(){oTbl.clickedRowIndex=this.rowIndex}; //clickedRowIndex - 클릭한 Row의 위치를 확인;
 	var oCell = oRow.insertCell();
 	
 	//삽입될 Form Tag
-	var waypoint = '<input type="text" value="" onclick="search()" class="w-addr'+ index + '" placeholder="경유지를 입력하세요"><input type="hidden" value="" class="w-lat'+ index + '"><input type="hidden" value="" class="w-lng'+ index + '"><img style="display:inline;" class="id-btn'+index+'" src="assets/images/ico_minus.png" onClick="remove()">';
-	index++;
+	var waypoint = '<input type="text" value="" onclick="search()" class="w-addr'+ index + '" placeholder="경유지를 입력하세요"><input type="text" value="" class="w-time'+ index + '" placeholder="아침 8:00"><input type="hidden" value="" class="w-lat'+ index + '"><input type="hidden" value="" class="w-lng'+ index + '"><img style="display:inline;" class="id-btn'+index+'" src="assets/images/ico_minus.png" onClick="remove()">';
+	
+	
 	oCell.innerHTML = waypoint;
+	
 }
 //Row 삭제
 function remove() {
+	index--;
 	try {
 		oTbl.deleteRow(oTbl.clickedRowIndex);
 	} catch(TypeError) {
 	}
-	index--;
+	if (index == 6) {
+		$(".s-sec").attr("style", "height:400px;");
+	} else if (index == 2 || index == 1) {
+		$(".s-sec").attr("style", "height:200px;");
+	} else if (index == 3) {
+		$(".s-sec").attr("style", "height:250px;");
+	} else if (index == 4) {
+		$(".s-sec").attr("style", "height:300px;");
+	} else if (index == 5) {
+		$(".s-sec").attr("style", "height:350px;");
+	}
+	
+	
 }
 
 function search() {
-	window.open("swp", "child", "width=1350, height=820, left=300, top=100");
+	window.open("swp"+oTbl.clickedRowIndex, "child", "width=1350, height=820, left=300, top=100");
 }
 
 // $(".ia-btn").on("click", function() {
@@ -157,36 +174,38 @@ function search() {
 	
 // })
 
-$(".ic2-btn").on("click", function() {
-	$(".s2-addr").val("");
-	$(".w-addr1").val("");
-	$(".e2-addr").val("");
+$(".mate-ic-btn").on("click", function() {
+	$(".mate-s-addr").val("");
 	$(".s-lat").val("");
 	$(".s-lng").val("");
-	$(".w-lat").val("");
-	$(".w-lng").val("");
+	$(".w-addr2").val("");
+	$(".w-lat2").val("");
+	$(".w-lng2").val("");
+	$(".w-addr3").val("");
+	$(".w-lat3").val("");
+	$(".w-lng3").val("");
+	$(".w-addr4").val("");
+	$(".w-lat4").val("");
+	$(".w-lng4").val("");
+	$(".w-addr5").val("");
+	$(".w-lat5").val("");
+	$(".w-lng5").val("");
+	$(".w-addr6").val("");
+	$(".w-lat6").val("");
+	$(".w-lng6").val("");
+	$(".mate-e-addr").val("");
 	$(".e-lat").val("");
 	$(".e-lng").val("");
 })
-$(".id-btn1").on("click", function() {
-	var waddr1 = $(".w-addr1");
-	var idbtn1 = $(".id-btn1");
-	waddr1.remove();
-	idbtn1.remove();
-})
-$(".s2-addr").on("click", function() {
-	window.open("ssp", "child", "width=1350, height=820, left=300, top=100");
+$(".mate-s-addr").on("click", function() {
+	window.open("ssp", "child", "width=1350, height=820, left=1000, top=50");
 })
 $(".w-addr1").on("click", function() {
-	window.open("swp", "child", "width=1350, height=820, left=300, top=100");
+	window.open("swp", "child", "width=1350, height=820, left=1000, top=50");
 })
-$(".e2-addr").on("click", function() {
-	window.open("sep", "child", "width=1350, height=820, left=300, top=100");
+$(".mate-e-addr").on("click", function() {
+	window.open("sep", "child", "width=1350, height=820, left=1000, top=50");
 })
 
 </script>
 </html>
-
-
-
-

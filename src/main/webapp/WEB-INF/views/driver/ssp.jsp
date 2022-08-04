@@ -248,11 +248,14 @@
 		var lng = "";
 		var addr = "";
 		// 키워드로 장소를 검색합니다
-		console.log();
 		searchPlaces();
 		clickPos();
 		function setParentText() {
-			opener.$("#s-addr").val($("#addr").val())
+			if ($("#title").val() == "") {
+				opener.$("#s-addr").val($("#addr").val())
+			} else {
+				opener.$("#s-addr").val($("#title").val())	
+			}
 			opener.$(".s-lat").val($("#lat").val())
 			opener.$(".s-lng").val($("#lng").val())
 			window.close() 
@@ -394,7 +397,7 @@
 				// LatLngBounds 객체에 좌표를 추가합니다
 				bounds.extend(placePosition);
 				(function(title, addr, pos, idx) {
-					markerClick(marker, title, addr, pos);
+					markerClick(marker, title, addr, pos, idx);
 
 					itemEl.onclick = function() {
 						removeMarker();
@@ -540,8 +543,10 @@
 			}
 		}
 
-		function markerClick(marker, title, addr, pos) {
+		function markerClick(marker, title, addr, pos, idx) {
 			kakao.maps.event.addListener(marker, 'click', function() {
+				removeMarker();
+				marker = addMarker(pos, idx);
 				// 이 값이 출발지, 경유지, 목적지 중 하나가 될것임
 				var search = {};
 				search.title = title;

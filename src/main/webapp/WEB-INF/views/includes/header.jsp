@@ -41,9 +41,9 @@
         <!-- css, js 연결 -->
         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="/assets/css/style.css">
-        <script src="/assets/js2/jquery-1.11.0.min.js"></script>
-        <script src="/assets/js2/swiper.min.js"></script>
-        <script src="/assets/js2/style.js"></script>
+        <script src="/assets/js/jquery-1.11.0.min.js"></script>
+        <script src="/assets/js/swiper.min.js"></script>
+        <script src="/assets/js/style.js"></script>
     </head>
 <!-- body -->
     <body>

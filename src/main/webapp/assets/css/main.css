@@ -62,7 +62,7 @@ font-size : 32px;
 .gnb > li > .depth2{display:none; position:absolute; z-index:100; top:100%; left:0; width: 100%; height: 50px; box-sizing:border-box; background:#F5F5F5; text-align:center;}
 /* .gnb > li > .depth2 > ul{display:flex; justify-content:center;} */
 .gnb > li > .depth2 > ul{display:flex; justify-content:center;}
-.gnb > li > .depth2 > ul > li{display:inline-block; position:relative; width:120px; height: 50px;}
+.gnb > li > .depth2 > ul > li{display:inline-block; position:relative; width:125px; height: 50px;}
 
 .gnb > li > .depth2 > ul > li > a{display:inline-block; position:relative; padding:0 20px; box-sizing:border-box; color:#1e1e1e; font-family: 'Montserrat'; font-size:14px; font-weight:500; letter-spacing:-0.25px; line-height:50px;}
 .gnb > li > .depth2 > ul > li > a:hover {color:#4454A1; font-family: 'Montserrat'; font-weight:700;}
@@ -114,7 +114,7 @@ font-size : 32px;
 .loginafter .btn_a1 + .down ul li a{display:block; position:relative; padding-left:15px; box-sizing:border-box; background:#fff; text-align:left; color:#333; font-size:16px; font-weight:400; letter-spacing:-0.25px; line-height:50px;}
 .loginafter .btn_a1 + .down ul li a:hover{background:#f8f9fa; color:#4454A1; font-weight:500;}
 
-/********** //llogin after  **********/
+/********** //login after  **********/
 
 
 /********** footer **********/
@@ -175,13 +175,13 @@ font-size : 32px;
 
 /********** police scroll banner **********/
 #scrollbanner { position: absolute; z-index: 999; right: 30px; top: 500px; /* width: 200px; height: 200px; */}
-
+#scrollbanner > ul { width:100px; }
 #scrollbanner > ul >li { background-color: #fff; padding: 8px 8px 8px 8px; text-align: center; }
 #scrollbanner > ul >li:first-child { border: 1px solid #e5e5e5; }
 #scrollbanner > ul >li:last-child { border: 1px solid #e5e5e5; border-top: 0; }
-#scrollbanner > ul > li > a{ font-size: 14px; font-weight: 400; color: #1e1e1e; }
+#scrollbanner > ul > li > a{ font-size: 11px; font-weight: 400; color: #1e1e1e; }
 #scrollbanner > ul > li:hover{ background: #f8f9fa; }
-#scrollbanner > ul > li > a:hover{ font-size: 14px; font-weight: 600; color: #4454A1; }
+#scrollbanner > ul > li > a:hover{ font-size: 11px; font-weight: 600; color: #4454A1; }
 
 /********** //police scroll banner **********/
 

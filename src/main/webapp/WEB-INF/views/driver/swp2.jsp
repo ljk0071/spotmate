@@ -253,12 +253,12 @@
 		clickPos();
 		function setParentText() {
 			if ($("#title").val() == "") {
-				opener.$("#e-addr").val($("#addr").val())
+				opener.$(".w-addr2").val($("#addr").val())
 			} else {
-				opener.$("#e-addr").val($("#title").val())	
+				opener.$(".w-addr2").val($("#title").val())	
 			}
-			opener.$(".e-lat").val($("#lat").val())
-			opener.$(".e-lng").val($("#lng").val())
+			opener.$(".w-lat2").val($("#lat").val())
+			opener.$(".w-lng2").val($("#lng").val())
 			window.close() 
         }
 		// 키워드 검색을 요청하는 함수입니다

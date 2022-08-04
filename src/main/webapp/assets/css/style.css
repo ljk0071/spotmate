@@ -4,16 +4,12 @@
 @import url("font.css");
 @import url("main.css");
 
-/* @import url("hover.css"); */
-/* @import url("mobile.css"); */
-
 
 /*jk*/
 
-/* @import url("spotHitchDeep.css"); */
-@import url("spotMateMain.css");
-/* @import url("spotHitchMain.css"); */
-/* @import url("main.css"); */
+@import url("spotHitchMain.css");
+@import url("spotHitchDeep.css");
+/* @import url("spotMateMain.css"); */
 /* @import url("driverWriteForm.css"); */
 @import url("driverMain.css");
 @import url("driverDeepCommon.css");

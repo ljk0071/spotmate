@@ -24,87 +24,80 @@
 	font-weight: 300;
 	color: #e8e7e7
 }
-input[type="checkbox"] {
-	display:none;
-}
-input[type="checkbox"] + label {
-	display:inline;
-	width: 18px;
-	height: 18px;
-	position: relative;
-}
-input + label::after {
-	background-color: #4454a1;
-    position: absolute;
-}
+/* input[type="checkbox"] { */
+/* 	display:none; */
+/* } */
+/* input[type="checkbox"] + label { */
+/* 	display:inline; */
+/* 	width: 18px; */
+/* 	height: 18px; */
+/* 	position: relative; */
+/* } */
+/* input + label::after { */
+/* 	background-color: #4454a1; */
+/*     position: absolute; */
+/* } */
 
-.contents {
-	width:1440px;
-	margin: 0px auto;
-	height: 1800px;
+
+.inner > .top {
 	position:relative;
-	color: #1e1e1e;
-}
-.top {
 	text-align:center;
+	margin: 100px 0px 0px 0px;
 }
-.top > div > span {
-	font-size: 36px;
+.inner > .top > div > span {
+	font-size: 30px;
 	font-family: 'Montserrat';
-	font-weight: 700;
+	font-weight: 600;
 }
-.top > div > p {
-	font-size: 36px;
-	font-family: 'Noto Sans Korean';
-	font-weight: 700;
+.inner > .top > div > p {
+	font-size: 30px;
+	font-weight: 600;
 }
-.top > p {
+.inner > .top > p {
 	font-size: 16px;
-	font-family: 'Noto Sans Korean';
-	font-weight: 700;
+	font-weight: 600;
 }
-.top > div {
-	margin: 20px 0px 20px 0px;
+.inner > .top > div {
+	margin: 30px 0px 30px 0px;
 }
-.top > span {
+.inner > .top > span {
 	position:absolute;
 	top: 170px;
-	left: 970px;
-	font-family: 'Noto Sans Korean';
-	font-weight: 700;
+	left: 1010px;
 	font-size: 16px;
+	font-weight: 600;
 	color: #4454a1;
 }
 
-.mid {
-	font-family: 'Noto Sans Korean';
-	font-weight: 700;
+.inner > .mid {
 	font-size: 16px;
-	position: absolute;
-	top: 200px;
-	left: 360px;
+	font-weight: 600;
 	width: 720px;
 	margin: 60px auto;
 	padding: 50px;
 	box-shadow: 0px 0px 5px 1px #e8e7e7;
 }
 .f-sec {
-	margin: 20px 0px 50px 0px;
+	margin: 30px 0px 50px 0px;
 }
 .f-sec .s-date {
-	width: 400px;
+	width: 500px;
 	height: 50px;
 }
 .f-sec .s-time {
-	width: 125px;
+	width: 200px;
 	height: 50px;
 }
+
 
 
 .s-sec {
 	margin: 30px 0px 30px 0px;
 	position:relative;
-	height: 400px;
+	height: 200px;
+}
+.s-sec table {
+	display:inline;
 }
 .s-sec > p {
 	position: absolute;
@@ -112,42 +105,38 @@ input + label::after {
 }
 .s-sec > img {
 	position: absolute;
-	top: 93px;
+	top: 100px;
 	width: 15px;
 	height: 73px;
 }
 #input-div {
-	width: 630px;
+	width: 730px;
 	position: absolute;
 	top: 70px;
-	left: 20px;
-}
-#input-div input {
-	width: 510px;
-	height: 30px;
+/* 	left: 20px; */
 }
 .s-addr {
+	width: 670px;
+	height: 30px;
 	margin: 15px 0px 15px 0px;
 }
+
 .e-addr {
+	width: 670px;
+	height: 30px;
 	margin: 15px 0px 15px 0px;
 }
+
 .ae-btn {
-	position:absolute;
-	top: 20px;
-	left: 515px;
-	width:16px;
-	height: 20px;
+	display:inline;
+	margin:0px 0px 0px 10px;
 }
 .ae-btn:hover {
 	cursor: pointer;
 }
 .ic-btn {
-	position:absolute;
-	top: 82px;
-	left: 514px;
-	width: 20px;
-	height: 20px;
+	display:inline;
+	margin:0px 0px 0px 10px;
 }
 .ic-btn:hover {
 	cursor: pointer;
@@ -156,35 +145,33 @@ input + label::after {
 
 
 .t-sec > input {
-	width: 320px;
+	width: 718px;
 	height: 50px;
-	margin: 10px 0px 50px 0px;
+	margin: 30px 0px 50px 0px;
 }
 .t-sec > table {
-	margin: 10px 0px 0px 0px;
+	width: 100%;
+	margin: 30px 0px 50px 0px;
 }
-.deepsel td {
+.t-sec > table > tbody > tr > td {
 	padding: 10px 40px 5px 0px;
-	width: 285px;
+	
 }
-.td2 {
-	margin: 0px 0px 0px 30px;
+.t-sec > table > tbody > tr > .td2 {
+	margin: 0px 0px 0px 50px;
 }
-.deepsel {
-	margin: 5px 0px 50px 0px;
-}
-.selected {
+.t-sec > table > tbody > tr > .selected {
 	color: #4454a1;
 	font-weight: bold;
 }
-.driverintroduce {
-	width: 620px;
+.t-sec > .driverintroduce {
+	width: 720px;
 	height: 100px;
-	margin: 20px 0px 0px 0px;
+	margin: 30px 0px 0px 0px;
 }
 .mid > form > button {
 	width: 200px;
 	height: 50px;
-	margin: 50px 0px 0px 210px;
+	margin: 50px 0px 0px 260px;
 	border: 1px solid #4454a1;
 }

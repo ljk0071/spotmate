@@ -1,14 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>SPOTMATE</title>
         <meta name="title" content="">
-        <meta name="description" content="">
+        <meta name="description" content="SPOTMATE">
         <meta name="author" content="">
         <meta name="keywords" content="">
         <meta property="og:type" content="website">
@@ -40,11 +39,11 @@
         <meta name="msapplication-TileImage" content="/assets/images/common/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <!-- css, js 연결 -->
-        <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="../common/css/style.css">
-        <script src="../common/js/jquery-1.11.0.min.js"></script>
-        <script src="../common/js/swiper.min.js"></script>
-        <script src="../common/js/style.js"></script>
+<!--         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"> -->
+<!--         <link rel="stylesheet" href="/assets/css/style.css"> -->
+<!--         <script src="/assets/js/jquery-1.11.0.min.js"></script> -->
+<!--         <script src="/assets/js/swiper.min.js"></script> -->
+<!--         <script src="/assets/js/style.js"></script> -->
     </head>
 <!-- body -->
     <body>
@@ -74,18 +73,18 @@
                         </ul>
                     </div>
                     <div class="rit_sec">
-                        <strong class="footer_tit">PRTFOLIO</strong>
+                        <strong class="footer_tit">PORTFOLIO</strong>
                         <div class="portfolio">
                             <a href="javascript:void(0);">GITHUB</a>
                             <div class="down">
                                 <ul>
                                     <li><a href="javascript:void(0);">GITHUB</a></li>
-                                    <li><a href="javascript:void(0);" target="_blank" rel="noopenner noreferrer">이정화</a></li>
-                                    <li><a href="javascript:void(0);" target="_blank" rel="noopenner noreferrer">김려경</a></li>
-                                    <li><a href="javascript:void(0);" target="_blank" rel="noopenner noreferrer">양지훈</a></li>
-                                    <li><a href="javascript:void(0);" target="_blank" rel="noopenner noreferrer">유지은</a></li>
-                                    <li><a href="javascript:void(0);" target="_blank" rel="noopenner noreferrer">이준규</a></li>
-                                    <li><a href="javascript:void(0);" target="_blank" rel="noopenner noreferrer">조윤주</a></li>
+                                    <li><a href="https://github.com/LJH0716" target="_blank" rel="noopenner noreferrer">이정화</a></li>
+                                    <li><a href="https://github.com/Ryeokyoung" target="_blank" rel="noopenner noreferrer">김려경</a></li>
+                                    <li><a href="https://github.com/wlgns5510" target="_blank" rel="noopenner noreferrer">양지훈</a></li>
+                                    <li><a href="https://github.com/ujiun" target="_blank" rel="noopenner noreferrer">유지은</a></li>
+                                    <li><a href="https://github.com/ljk0071" target="_blank" rel="noopenner noreferrer">이준규</a></li>
+                                    <li><a href="https://github.com/joyunju" target="_blank" rel="noopenner noreferrer">조윤주</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -99,7 +98,7 @@
                     </ul>
                     <address class="copy">
                         ㈜SPOTMATE | TEAM 이정화 김려경 양지훈 유지은 이준규 조윤주 | 서울특별시 관악구 봉천동 862-1 | 대표변호 : 1800-2022 사업자등록번호 : 106-86-68127 <br/>
-                        Copyright ⓒ 2022 spotmate. ALL Rightss Reserved.
+                        Copyright ⓒ 2022 spotmate. ALL Rights Reserved.
                     </address>
                 </div>
             </div>
