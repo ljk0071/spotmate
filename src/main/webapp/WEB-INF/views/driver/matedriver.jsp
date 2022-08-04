@@ -46,7 +46,7 @@
 						<td><input type="hidden" value="" class="s-lng"></td>
 					</tr>
 					<tr>
-						<td><input type="text" value="" class="w-addr1" placeholder="경유지를 입력하세요"><img class="id-btn1" src="assets/images/ico_close.png" onclick="remove()"></td>
+						<td><input type="text" value="" class="w-addr1" placeholder="경유지를 입력하세요"><img class="id-btn1" src="assets/images/ico_minus.png" onclick="remove()"></td>
 						<td><input type="hidden" value="" class="w-lat1"></td>
 						<td><input type="hidden" value="" class="w-lng1"></td>
 					</tr>
@@ -134,7 +134,7 @@ function insRow() {
 	var oCell = oRow.insertCell();
 	
 	//삽입될 Form Tag
-	var waypoint = '<input type="text" value="" onclick="search()" class="w-addr'+ index + '" placeholder="경유지를 입력하세요"><input type="hidden" value="" class="w-lat'+ index + '"><input type="hidden" value="" class="w-lng'+ index + '"><img style="display:inline;" class="id-btn'+index+'" src="assets/images/ico_close.png" onClick="remove()">';
+	var waypoint = '<input type="text" value="" onclick="search()" class="w-addr'+ index + '" placeholder="경유지를 입력하세요"><input type="hidden" value="" class="w-lat'+ index + '"><input type="hidden" value="" class="w-lng'+ index + '"><img style="display:inline;" class="id-btn'+index+'" src="assets/images/ico_minus.png" onClick="remove()">';
 	index++;
 	oCell.innerHTML = waypoint;
 }

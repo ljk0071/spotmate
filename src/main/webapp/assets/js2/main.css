@@ -96,7 +96,7 @@ font-size : 32px;
 */
 
 .loginafter.active .btn_a1 {font-family: 'Montserrat'; font-weight:700; color:#4454A1;}
-.loginafter .btn_a1:before{display:block; position:absolute; top:50%; right:10px; transform:translateY(-50%); width:15px; height:9px; content:""; background:url(/assets/images/common/ico_select_down.png)no-repeat center center; transition:all .3s;}
+.loginafter .btn_a1:before{display:block; position:absolute; top:50%; right:10px; transform:translateY(-50%); width:15px; height:9px; content:""; background:url(../../images/common/ico_select_down.png)no-repeat center center; transition:all .3s;}
 .loginafter.active .btn_a1:before{transform:translateY(-50%) rotate(180deg);}
 .loginafter .btn_a1 img { width: 40px;  margin: 0px 3px;}
 
@@ -141,8 +141,8 @@ font-size : 32px;
 /* text-decoration:underline; */
 
 .footer_wrapper .portfolio{display:inline-block; position:relative;}
-.footer_wrapper .portfolio > a{display:block; position:relative; width:240px; height:50px; padding-left:60px; border:1px solid #c9c9c9; box-sizing:border-box; background:#fff url(/assets/images/common/ico_portfolio.png)no-repeat left 15px center; text-align:left; color:#1e1e1e; font-size:16px; font-weight:500; letter-spacing:-0.25px; line-height:48px;}
-.footer_wrapper .portfolio > a:before{display:block; position:absolute; top:50%; right:10px; width:15px; height:9px; transform:translateY(-50%); content:""; background:url(/assets/images/common/ico_select_down.png)no-repeat center center; transition:all .3s;}
+.footer_wrapper .portfolio > a{display:block; position:relative; width:240px; height:50px; padding-left:60px; border:1px solid #c9c9c9; box-sizing:border-box; background:#fff url(../../images/common/ico_portfolio.png)no-repeat left 15px center; text-align:left; color:#1e1e1e; font-size:16px; font-weight:500; letter-spacing:-0.25px; line-height:48px;}
+.footer_wrapper .portfolio > a:before{display:block; position:absolute; top:50%; right:10px; width:15px; height:9px; transform:translateY(-50%); content:""; background:url(../../images/common/ico_select_down.png)no-repeat center center; transition:all .3s;}
 .footer_wrapper .portfolio.active > a:before{transform:translateY(-50%) rotate(180deg);}
 /* .footer_wrapper .portfolio > .down{display:none; position:absolute; z-index:1000; top:100%; left:0; width:100%;} */
 .footer_wrapper .portfolio > .down{display:none; position:absolute; z-index:1000; bottom:100%; left:0; width:100%;}
