@@ -114,20 +114,22 @@ var oTbl;
 
 //Row 추가
 function insRow() {
-	index++;
-	if (index == 7) {
+	if (index >= 6) {
 		alert("경유지는 5개 이상 추가할 수 없습니다.");
+		index = 6;
 		return;
-	} else if (index == 2) {
-		$(".s-sec").attr("style", "height:250px;");
+	}
+	index++;
+	if (index == 2) {
+		$(".s-sec").attr("style", "height:270px;");
 	} else if (index == 3) {
-		$(".s-sec").attr("style", "height:300px;");
+		$(".s-sec").attr("style", "height:320px;");
 	} else if (index == 4) {
-		$(".s-sec").attr("style", "height:350px;");
+		$(".s-sec").attr("style", "height:370px;");
 	} else if (index == 5) {
-		$(".s-sec").attr("style", "height:400px;");
+		$(".s-sec").attr("style", "height:420px;");
 	} else if (index == 6) {
-		$(".s-sec").attr("style", "height:450px;");
+		$(".s-sec").attr("style", "height:470px;");
 	}
 	
 	oTbl = document.getElementById("addTable");
@@ -149,16 +151,16 @@ function remove() {
 		oTbl.deleteRow(oTbl.clickedRowIndex);
 	} catch(TypeError) {
 	}
-	if (index == 6) {
-		$(".s-sec").attr("style", "height:400px;");
+	if (index >= 6) {
+		$(".s-sec").attr("style", "height:420px;");
 	} else if (index == 2 || index == 1) {
-		$(".s-sec").attr("style", "height:200px;");
+		$(".s-sec").attr("style", "height:220px;");
 	} else if (index == 3) {
-		$(".s-sec").attr("style", "height:250px;");
+		$(".s-sec").attr("style", "height:270px;");
 	} else if (index == 4) {
-		$(".s-sec").attr("style", "height:300px;");
+		$(".s-sec").attr("style", "height:320px;");
 	} else if (index == 5) {
-		$(".s-sec").attr("style", "height:350px;");
+		$(".s-sec").attr("style", "height:370px;");
 	}
 	
 	

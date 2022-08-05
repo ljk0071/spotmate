@@ -26,7 +26,7 @@
 				<p class="sfd">SPOT CARPOOL</p>
 				<span class="ssd">스팟 카풀 서비스는 '스팟'에서 '스팟'으로 이동하는<br>
 					드라이버와 유저를 매칭해주는 카풀 서비스로<br> 원하는 장소와 기간을 설정하여 등록할 수 있습니다.
-				<a href="./carpoolWrite"><button>등록하기→</button></a></span>
+				<a href="./carpoolWrite">등록하기&nbsp; →</a></span>
 			</div>
 			<img src="/assets/images/road1.jpg">
 		</div>
@@ -36,7 +36,7 @@
 				<p class="tfd">SPOT HITCHHIKE</p>
 				<span class="tsd">스팟 카풀 서비스는 '스팟'에서 '스팟'으로 이동하는<br>
 					드라이버와 유저를 매칭해주는 카풀 서비스로<br> 원하는 장소와 기간을 설정하여 등록할 수 있습니다.
-				<a href="./hitchWrite"><button>등록하기→</button></a></span>
+				<a href="./hitchWrite">등록하기&nbsp; →</a></span>
 			</div>
 		</div>
 		<div class="fourth clear" data-aos="fade-left">
@@ -45,7 +45,7 @@
 				<p class="ffd">MATE PRODUCT</p>
 				<span class="fsd">메이트 서비스는 드라이버가 이동하는 경로를<br> 등록하여 출발지에서
 					도착지까지 모든 일정을<br> 함께하는 이동 메이트 서비스입니다.
-				<a href="./mateWrite"><button>등록하기→</button></a></span>
+				<a href="./mateWrite" class="btn_a2">등록하기&nbsp; →</a></span>
 			</div>
 		</div>
 	</div>

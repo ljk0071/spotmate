@@ -20,10 +20,10 @@
 		</span>
 	</div>
 	<div class="inner clear">
-		<div class="hitch-deep-infoTop">
+		<div class="hitch-deep-infoTop clear">
 			<div class="markImg"></div>
 			<span>드라이버 spotmate 12 님</span>
-			<button>탑승 요청</button>
+			<a href="#">탑승 요청</a>
 		</div>
 		<div class="data">
 			<table>
@@ -50,9 +50,7 @@
 			</table>
 		</div>
 		<div id="hitch-deep-map"></div>
-		<div class="back">
-			<a href="../hitch"><button>목록보기</button></a>
-		</div>
+		<a class="back" href="../hitch">목록보기</a>
 	</div>
 	<c:import url="/WEB-INF/views/includes/footer.jsp"></c:import>
 

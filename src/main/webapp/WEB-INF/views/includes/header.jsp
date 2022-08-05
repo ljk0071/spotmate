@@ -74,7 +74,7 @@
                             <div class="depth2">
                                 <ul>
                                     <li><a href="javascript:void(0);">CARPOOL</a></li>
-                                    <li><a href="javascript:void(0);">HITCHHIKE</a></li>
+                                    <li><a href="/hitch">HITCHHIKE</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -101,8 +101,8 @@
                             <a href="javascript:void(0);">DRIVER</a>
                             <div class="depth2">
                                 <ul>
-                                    <li><a href="javascript:void(0);">GUIDE</a></li>
-                                    <li><a href="javascript:void(0);">REGISTER</a></li>
+                                    <li><a href="/driver">GUIDE</a></li>
+                                    <li><a href="/driver">REGISTER</a></li>
                                 </ul>
                             </div>
                         </li>
