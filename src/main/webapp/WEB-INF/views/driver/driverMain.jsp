@@ -13,8 +13,8 @@
 </head>
 <body>
 	<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
-	<div class="inner">
 		<div class="driver-top-banner"></div>
+	<div class="inner">
 		<div class="first clear" data-aos="fade-right">
 			<img src="/assets/images/common/login_image_100_01.png"> <span>드라이버<br>이동 경로 등록하기</span>
 				<p>드라이버님이 이동하시는 경로를 등록해주시면<br> 같이 이동을 원하는

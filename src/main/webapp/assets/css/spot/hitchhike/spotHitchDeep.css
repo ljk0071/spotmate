@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+#hitch-deep-map {
+	position: relative;
+	width: 1440px;
+	height: 600px;
+}
+
+
+.hitch-deep-infoTop {
+	border-bottom: 3px solid #4454a1;
+	margin: 50px 0px 0px 0px;
+	padding: 0px 0px 20px 0px;
+}
+.hitch-deep-infoTop > span {
+	float: left;
+	margin: 20px 0px 0px 10px;
+
+}
+.hitch-deep-infoTop > a {
+	text-align:center;
+	float: right;
+	display:block;
+	padding:0 20px 0 20px; 
+    font-size:16px; 
+    font-weight:600;
+    letter-spacing:-0.25px;  
+    line-height:45px;
+    width: 75px;
+    height: 45px;
+    border-radius: 6px; 
+    background-color: #f8f9fa;
+    color :#4454a1;
+}
+.hitch-deep-infoTop > .markImg {
+	float:left;
+	margin: 10px 0px 0px 0px;
+	width: 40px;
+	height: 40px;
+	background: url(/assets/images/ico_spot.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.data {
+	position:relative;
+	margin: 0px 0px 50px 0px;
+	font-family: Noto Sans Korean;
+	font-weight: 300;
+}
+.data > table > tbody > tr > td{
+	border-bottom: 1px solid #bfbfbf;
+}
+.data .waypoint {
+	width: 180px;
+	height: 50px;
+	background: rgba(245,245,245,1);
+	text-align: center;
+	font-weight: 600;
+}
+.data .tname {
+	width: 539px;
+	padding: 0px 0px 0px 10px;
+}
+.data .destination {
+	width: 180px;
+	background: rgba(245,245,245,1);
+	text-align: center;
+	font-weight: 600;
+}
+.inner > .back {
+	text-align:center;
+	float: left;
+	display:block;
+	padding: 30px;
+	margin: 150px 0px 150px 590px;
+    font-size:16px; 
+    font-weight:600;
+    letter-spacing:-0.25px;  
+    line-height:45px;
+    width: 200px;
+    height: 45px;
+    border-radius: 6px; 
+    background-color: #f8f9fa;
+    color :#4454a1;
+}

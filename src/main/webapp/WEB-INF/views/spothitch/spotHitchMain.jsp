@@ -1,22 +1,26 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
+<script src="/assets/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c6544d76c3912585c75cfd126a875faf&libraries=services,clusterer,drawing"></script>
-<link rel="stylesheet" href="/assets/css/style.css">
+<link href="${pageContext.request.contextPath}/assets/css/style.css" rel="stylesheet" />
+<title>스팟 히치하이크 메인</title>
 </head>
 <body>
 	<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 	<div class="driver-top-banner clear">
-		<span class="more">실시간 탑승 가능<br> SPOT HITCHHIKE
-		</span> <span class="more2">현재 나의 위치에서 가까운 드라이버를 찾아<br> 출발지부터
-			목적지까지 편하게 이동해보세요.
-		</span>
+		<div class="driver-top-banner-inside">
+		<div class="more-box">
+			<p class="more">실시간 탑승 가능</p>
+			<p class="more3">SPOT HITCHHIKE</p>
+		</div>
+			<span class="more2">현재 나의 위치에서 가까운 드라이버를 찾아<br> 출발지부터
+				목적지까지 편하게 이동해보세요.
+			</span>
+		</div>
 	</div>
 	<div class="inner clear">
 		<div id="hitch-main-map"></div>
@@ -54,7 +58,7 @@
 				</div>
 				<a class="carPos"><img src="/assets/images/ico_spot.png"></a>
 					
-				<a class="detail" href="./hitchdeep">
+				<a class="hitchdeep" href="/spotHitchhikedeep">
 					<button>
 						상세 조건
 					</button>
@@ -81,7 +85,7 @@
 				</div>
 				<a class="carPos"><img src="/assets/images/ico_spot.png"></a>
 					
-				<a class="detail" href="./hitchdeep">
+				<a class="hitchdeep" href="/spotHitchhikedeep">
 					<button>
 						상세 조건
 					</button>
@@ -163,7 +167,7 @@
 		marker.setMap(map);
 
 		//마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
-		var iwContent = '<div class="iw" style="width:250px; padding:10px 25px 10px 25px;">목적지</div> <div style="padding:10px 25px 10px 25px;">NAVER 본사</div> <div style="padding:10px 25px 10px 25px;">드라이버 &nbsp; spotmate12 님</div> <div style="padding:10px 25px 10px 25px;">탑승 가능 인원 수 &nbsp; 1명</div> <a href="./hitchdeep"><button style="width: 120px; height: 40px; margin: 0px 0px 15px 90px;">상세 보기</button></a>', iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+		var iwContent = '<div class="iw" style="width:250px; padding:10px 25px 10px 25px;">목적지</div> <div style="padding:10px 25px 10px 25px;">NAVER 본사</div> <div style="padding:10px 25px 10px 25px;">드라이버 &nbsp; spotmate12 님</div> <div style="padding:10px 25px 10px 25px;">탑승 가능 인원 수 &nbsp; 1명</div> <a href="/spotHitchhikedeep"><button style="width: 120px; height: 40px; margin: 0px 0px 15px 90px;">상세 보기</button></a>', iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
 		// 인포윈도우를 생성합니다
 		var infowindow = new kakao.maps.InfoWindow({

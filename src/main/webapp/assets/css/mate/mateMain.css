@@ -1,0 +1,309 @@
+.inputBox  input::placeholder {
+	color: #C2C6CC;
+}
+.inputBox  input {
+	border: none;
+}
+.mateMain_wrap {
+/* 	width: 1920px; */
+	height: auto;
+	margin: 0px auto;
+	
+}
+/***********************mateMain_content**************************/
+.mateMain-banner {
+	height: 420px;
+	background: rgba(214,228,247,1); 
+}
+.mateMain_content {
+	width: 1920px;
+	margin: 0px auto;
+	
+	position: relative; 
+}
+.mateMain_content .seachBox {
+	position: absolute;
+	top: 180px;
+	left: 470px;
+}
+.mateMain_content .selBox {
+	position: absolute;
+	top: 15px;
+	left: 35px;
+}
+.mateMain_content h2 {
+  width: 367px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0px 0px 30px 0px;
+}
+.mateMain_content .inputBox {
+  width: 1000px;
+  height: 70px;
+  background: rgba(255,255,255,1);
+  position: relative;
+}
+.mateMain_content .sel1 {
+	border-right : 1px solid #C2C6CC;
+	float: left;
+	padding: 0px 80px 0px 0px;
+}
+.mateMain_content .sel2 {
+	border-right : 1px solid #C2C6CC;
+	float: left;
+	margin: 0px 0px 0px 10px;
+}
+.mateMain_content .sel3 {
+	border-right : 1px solid #C2C6CC;
+	float: left;
+	margin: 0px 0px 0px 10px;
+}
+.mateMain_content .sel4 {
+	float: left;
+	margin: 0px 0px 0px 10px;
+}
+.mateMain_content .LocationLabel {
+  width: 80px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content .CheckInLabel {
+  width: 80px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content .CheckOutLabel {
+  width: 80px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content .PeopleLabel {
+  width: 70px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content .searchPictogrem {
+  width: 54px;
+  height: 54px;
+  background: url("../images/round-search.png");
+  border-radius: 50%;
+  float: right;
+  position: absolute;
+  top: 8px;
+  left: 930px;  
+}
+
+/***********************mateMain_content2**************************/
+.mateMain_content2 input {
+	margin: 0px 10px 0px 0px;
+}
+.mateMain_content2 {
+	width: 1440px;
+	height: 2500px;
+	background: rgba(255,255,255,1);
+	margin: 0px auto;	
+}
+.mateMain_content2 .DetaileBox {
+	width: 150px;
+	height:55px;
+	background-color: #4454A1;
+	float: left;
+	position: relative;
+	
+}
+.mateMain_content2 .DetaileBox .DetaileBoxFont {
+	top: 19px;
+	left: 60px;
+	font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+}
+.mateMain_content2 .DetaileBox .DetaileBoxImg {
+	top: 17px;
+	left: 25px;
+    position: absolute;
+}
+.mateMain_content2 .checkBox {
+  width: 1284px;
+  height: 53px;
+  background: rgba(255,255,255,1);
+  margin: 60px 0px 50px 100px;
+  padding : 0px 0px 0px 0px;
+  border: 1px solid rgba(217,217,217,1);
+  overflow: hidden;
+  position: relative;
+}
+.mateMain_content2 .nonSmoke {
+  width: 90px;
+  color: rgba(72,72,72,1);
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content2 .femaleDriver {
+  width: 120px;
+  color: rgba(72,72,72,1);
+  position: absolute;
+  top: 19px;
+  left: 180px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content2 .pet {
+  width: 90px;
+  color: rgba(72,72,72,1);
+  position: absolute;
+  top: 19px;
+  left: 350px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content2 .phoneCharger {
+  width: 210px;
+  color: rgba(72,72,72,1);
+  position: absolute;
+  top: 19px;
+  left: 500px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content2 .useTrunk {
+  width: 160px;
+  color: rgba(72,72,72,1);
+  position: absolute;
+  top: 19px;
+  left: 700px;
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.mateMain_content2 .mateListAll {
+	width: 1500px;
+}
+.mateMain_content2 .mateList {
+	float: left;
+	height: 420px;
+	margin: 0px 24px 90px 0px;
+}
+.mateMain_content2 .mateList .matePicture {
+  width: 340px;
+  height: 330px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.mateMain_content2 .mateList .driverName {
+  width: 118px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px 85px 10px 0px;
+}
+.mateMain_content2 .mateList .schedule {
+  width: 135px;
+  color: rgba(72,72,72,1);
+  font-family: Noto Sans;
+  font-weight: Regular;
+  font-size: 16px;
+}
+.mateMain_content2 .mateList .startEnd {
+  width: 150px;
+  color: rgba(72,72,72,1);
+  font-family: Noto Sans;
+  font-weight: Bold;
+  font-size: 20px;
+  margin: 10px 73px 0px 0px;
+ float: left;
+}
+.mateMain_content2 .mateList img {
+	margin: 5px 0px 3px 0px;
+}
+.mateMain_content2 .mateList .seatNo {
+  width: 50px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 7px 14px 0px 0px;
+}
+.mateMain_content2 .mateList .petYN {
+  width: 50px;
+  color: rgba(72,72,72,1);
+  font-family: Montserrat;
+  font-weight: Bold;
+  font-size: 16px;
+}
+.mateMain_content2 .mateListBtn {
+  width: 310px;
+  height: 65px;
+  background: rgba(70,84,163,1);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 30px 0px 0px 560px;
+  float: left;
+}
+.mateMain_content2 .mateListBtn h2 {
+  width: 100px;
+  color: rgba(255,255,255,1);
+  font-family: Noto Sans;
+  font-weight: Bold;
+  font-size: 24px;
+  margin: 10px 0px 10px 120px;
+}
+.mateMain_banner {
+  width: 1920px;
+  height: 200px;
+  background: rgba(244,251,251,1);
+}
+.mateMain_banner h2 {
+  width: 137px;
+  color: rgba(30,30,30,1);
+  font-family: Montserrat;
+  font-weight: Bold;
+  font-size: 30px; 
+}

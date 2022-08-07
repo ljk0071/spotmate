@@ -1,0 +1,135 @@
+.driver-top-banner {
+	height:230px;
+	background-color: #e8e7e7;
+}
+
+.first > img {
+	float:left;
+	margin: 150px 0px 0px 150px;
+}
+.first > span {
+	float:left;
+	margin: 170px 0px 0px 30px;
+	font-weight: 600;
+	font-size: 25px;
+}
+.first > p {
+	float: right;
+	font-weight: 600;
+	margin: 180px 150px 0px 0px;
+}
+
+.second {
+	margin: 400px 0px 0px 0px;
+}
+.second img {
+	float:right;
+	width:720px;
+	height:400px;
+}
+.second .s1 {
+	float:left;
+	margin: 100px 0px 0px 150px;
+}
+.second .s1 .sfd {
+	text-align:center;
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-size: 30px;
+}
+.second .s1 .ssd {
+	float:left;
+	margin: 30px 0px 0px 0px;
+}
+.second .s1 .ssd a {
+	text-align:center;
+	display:block;
+	margin: 30px 0px 0px 0px;
+	padding:0 20px 0 20px; 
+    font-size:16px; 
+    font-weight:600;
+    letter-spacing:-0.25px;  
+    line-height:45px;
+    width: 100px;
+    height: 45px;
+    border-radius: 6px; 
+    background-color: #f8f9fa;
+    color :#4454a1;
+}
+
+
+.third {
+	margin: 400px 0px 0px 0px;
+}
+.third img {
+	float:left;
+	width:720px;
+	height:400px;
+}
+.third .t1 {
+	float:right;
+	margin: 100px 150px 0px 0px;
+}
+.third .t1 .tfd {
+	text-align:center;
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-size: 30px;
+}
+.third .t1 .tsd {
+	float:left;
+	margin: 30px 0px 0px 0px;
+}
+.third .t1 .tsd a {
+	text-align:center;
+	display:block;
+	margin: 30px 0px 0px 0px;
+	padding:0 20px 0 20px; 
+    font-size:16px; 
+    font-weight:600;
+    letter-spacing:-0.25px;  
+    line-height:45px;
+    width: 100px;
+    height: 45px;
+    border-radius: 6px; 
+    background-color: #f8f9fa;
+    color :#4454a1;
+}
+
+.fourth {
+	margin: 400px 0px 400px 0px;
+}
+.fourth img {
+	float:right;
+	width:720px;
+	height:400px;
+}
+.fourth .f1 {
+	float:left;
+	margin: 100px 0px 0px 150px;
+}
+.fourth .f1 .ffd {
+	text-align:center;
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-size: 30px;
+}
+.fourth .f1 .fsd {
+	float:left;
+	margin: 30px 0px 0px 0px;
+}
+.fourth .f1 .fsd a {
+	text-align:center;
+	display:block;
+	margin: 30px 0px 0px 0px;
+	padding:0 20px 0 20px; 
+    font-size:16px; 
+    font-weight:600;
+    letter-spacing:-0.25px;  
+    line-height:45px;
+    width: 100px;
+    height: 45px;
+    border-radius: 6px; 
+    background-color: #f8f9fa;
+    color :#4454a1;
+}

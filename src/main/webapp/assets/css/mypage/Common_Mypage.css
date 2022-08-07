@@ -1,0 +1,620 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+/*r*/
+/*wrap*/
+#wrap {
+   width: 100%;
+   margin: 0px auto;
+}
+
+/*contents*/
+.contents {
+   width: 1440px;
+   height: 100%;
+   padding: 50px 180px 200px 0px;
+   margin: 0px auto;
+   /*border: 1px solid #ff00ff;*/
+   overflow: hidden;
+}
+
+/**************************공통******************************/
+
+/*button 요소
+.myPage_btnB {
+   color: rgba(255, 255, 255, 1);
+   font-family: Noto Sans;
+   font-weight: SemiBold;
+   font-size: 24px;
+   text-align: center;
+   background: rgba(68, 84, 161, 1);
+}
+
+.myPage_btnY {
+   color: rgba(255, 255, 255, 1);
+   font-family: Noto Sans;
+   font-weight: SemiBold;
+   font-size: 24px;
+   text-align: center;
+   background: rgba(239, 192, 74, 1);
+}*/
+
+/**************************topNav******************************/
+/*topNav*/
+.myPage_topNav {
+	margin: 0px auto;
+	width: 100%;
+	height: 230px;
+	background: rgba(247, 247, 247, 1);
+	text-align: center;
+}
+
+/*메뉴박스1*/
+.myPage_topNav>.box1 {
+   width: 228px;
+   height: 68px;
+   position: relative;
+   top: 51px;
+   background: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(217, 217, 217, 1);
+   display: inline-block;
+   padding: 15px;
+   background: rgba(255, 255, 255, 1);
+}
+
+.myPage_topNav>.box1>.box1_box {
+   width: 70px;
+   height: 70xp;
+   background: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(70, 84, 163, 1);
+   border-radius: 8px;
+   float: left;
+   margin-right: 25px;
+}
+
+.myPage_topNav>.box1>p {
+   width: 120px;
+   color: rgba(47, 47, 48, 1);
+   font-family: Montserrat;
+   font-weight: 700;
+   font-size: 16px;
+   text-align: left;
+   float: left;
+   margin-top: 10px;
+}
+
+.myPage_topNav>.box1>span {
+   width: 58px;
+   color: rgba(47, 47, 48, 1);
+   font-family: Montserrat;
+   font-weight: Regular;
+   font-size: 14px;
+   text-align: left;
+   margin-top: 10px;
+   margin-right: 5px;
+   float: left;
+}
+
+/*메뉴박스 별 픽토*/
+.myPage_topNav>.box1>span>img {
+   width: 13px;
+   height: 13px;
+   float: left;
+   margin: 1px 4px 0px 0px;
+}
+
+/*메뉴박스2*/
+.myPage_topNav>.box2 {
+   width: 160px;
+   height: 68px;
+   background: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(217, 217, 217, 1);
+   display: inline-block;
+   padding: 15px;
+   position: relative;
+   top: 5px;
+}
+
+.myPage_topNav>.box2>p {
+   width: 100%;
+   color: rgba(91, 91, 91, 1);
+   font-family: Noto Sans;
+   font-weight: 700;
+   font-size: 16px;
+   position: relative;
+   top: 8px;
+   text-align: left;
+}
+
+.myPage_topNav>.box2>span {
+   width: 61px;
+   color: rgba(70, 84, 163, 1);
+   font-family: Montserrat;
+   font-weight: 700;
+   font-size: 14px;
+   text-align: left;
+   float: left;
+   position: relative;
+   top: 20px;
+}
+
+.myPage_topNav>.box2>img {
+   position: relative;
+   top: 15px;
+   left: 35px;
+}
+
+.myPage_topNav>.box2>P>a {
+   color: rgba(91, 91, 91, 1);
+}
+
+/*메뉴박스3*/
+.myPage_topNav>.box3 {
+   width: 160px;
+   height: 68px;
+   background: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(217, 217, 217, 1);
+   display: inline-block;
+   padding: 15px;
+}
+
+.myPage_topNav>.box3>p {
+   width: 100%;
+   color: rgba(91, 91, 91, 1);
+   font-family: Noto Sans;
+   font-weight: 700;
+   font-size: 16px;
+   opacity: 1;
+   position: relative;
+   top: 8px;
+   text-align: left;
+}
+
+.myPage_topNav>.box3>span {
+   width: 61px;
+   color: rgba(70, 84, 163, 1);
+   font-family: Montserrat;
+   font-weight: 700;
+   font-size: 14px;
+   text-align: left;
+   float: left;
+   position: relative;
+   top: 20px;
+}
+
+.myPage_topNav>.box3>img {
+   position: relative;
+   top: 15px;
+   left: 35px;
+}
+
+.myPage_topNav>.box3>p>a {
+   color: rgba(91, 91, 91, 1);
+}
+
+/**************************sideNav******************************/
+
+/*sideNav*/
+.myPage_sideNav {
+   width: 320px;
+   height: 100%;
+   padding: 0px 0px 0px 90px;
+   /*border: 1px solid #ff00ff;*/
+   float: left;
+}
+
+/* 마이페이지 글자 */
+.myPage_sideNav>h2 {
+   width: 120px;
+   height: 66px;
+   color: rgba(47, 47, 48, 1);
+   font-family: Noto Sans;
+   font-weight: SemiBold;
+   font-size: 24px;
+   color: rgba(47, 47, 48, 1);
+}
+
+/*sideNav list*/
+.myPage_list>li {
+   width: 220px;
+   height: 50px;
+   border: 1px solid rgba(217,217,217,1);
+   border-bottom: none;
+}
+
+.myPage_list>li>a {
+   width: 100%;
+   height: 100%;
+   color: #2f2f30;
+   padding: 15px 0px 0px 13px;
+   font-size: 16px;
+   font-family: Noto Sans;
+   font-weight: 700;
+   display: inline-block;
+}
+
+.myPage_list img {
+   float: right;
+   margin-right: 30px;
+   padding-bottom: 3px;
+} 
+
+.myPage_list>li:hover {
+   background-color: #f1f1f1;
+   font-weight: 800;
+}
+
+.myPage_list>li>a:hover {
+   color: #4454a1;
+}
+
+/*list last*/
+.myPage_list>.myPage_list_last {
+   border-bottom: 1px solid rgba(217,217,217,1);
+}
+
+/**************************section******************************/
+
+/*section*/
+.myPage_selection {
+   width: 970px;
+   /*******************************************************************/
+   height: 100%;
+   /*border: 1px solid #ff00ff;*/
+   overflow: hidden;
+   float: left;
+}
+
+/************section-header*****************/
+.myPage_selection>.myPage_header {
+   width: 100%;
+   /********************************************************************/
+   height: 100%;
+   /*border: 1px solid #ff00ff;*/
+   float: left;
+}
+
+/*h3 글자*/
+.myPage_selection>.myPage_header>h3 {
+   color: rgba(47, 47, 48, 1);
+   font-family: Noto Sans;
+   font-weight: SemiBold;
+   font-size: 24px;
+   display: inline-block;
+   padding: 0px 10px 41px 0px;
+}
+
+/*p태그 글자*/
+.myPage_selection>.myPage_header>p {
+   color: rgba(47, 47, 48, 1);
+   font-family: Noto Sans;
+   font-weight: Regular;
+   font-size: 16px;
+   display: inline-block;
+}
+
+/*list 글자*/
+.myPage_selection>.myPage_header>ul>li {
+   color: rgba(81, 81, 81, 1);
+   font-family: Noto Sans;
+   font-weight: Regular;
+   font-size: 14px;
+   padding: 0px 0px 10px 0px;
+}
+/************section-article*****************/
+
+/*myPage_article*/
+.myPage_selection>.myPage_article {
+   width: 100%;
+   height: 70px;
+   float: left;
+   background: rgba(239, 239, 239, 1);
+   border: 1px solid rgba(217, 217, 217, 1);
+   
+}
+
+/*inputBox*/
+.inputBox {
+   padding: 14px 2px 10px 7px;
+   text-align: left;
+}
+
+
+.myPage_article2 .btn_review {
+   background-color: rgba(245, 245, 245, 1);
+   color:rgba(68, 84, 161, 1);
+   width: 100px;
+   height: 30px;
+   border: none;
+   font-weight: bold;
+}
+.inputBox input {
+   width: 178px;
+   height: 40px;
+   background: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(217, 217, 217, 1);
+   text-align: center;
+   color: rgba(102, 102, 102, 1);
+   font-family: Noto Sans;
+   font-weight: Regular;
+   font-size: 16px;
+   text-align: center;
+}
+
+.inputBox select {
+   width: 128px;
+   height: 42px;
+   background: rgba(255, 255, 255, 1);
+   opacity: 1;
+   top: 580px;
+   left: 945px;
+   border: 1px solid rgba(217, 217, 217, 1);
+   overflow: hidden;
+   text-align: center;
+   color: rgba(102, 102, 102, 1);
+   font-family: Noto Sans;
+   font-weight: Regular;
+   font-size: 16px;
+   text-align: center;
+}
+
+/*버튼*/
+.btns {
+   float: right;
+   margin: 1px 8px 0px 0px;
+}
+.myPage_btnB {
+   width: 150px;
+   height: 40px;
+}
+.myPage_btnB {
+    color: rgba(255, 255, 255, 1);
+    font-family: Noto Sans;
+    font-weight: SemiBold;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(68, 84, 161, 1);
+    cursor: pointer;
+}
+
+.myPage_btnY {
+   width: 150px;
+   height: 40px;
+}
+.myPage_btnY {
+   color: rgba(255, 255, 255, 1);
+   font-family: Noto Sans;
+   font-weight: SemiBold;
+   font-size: 16px;
+   text-align: center;
+   background: rgba(239, 192, 74, 1);
+}
+/*****************top-nav****************************/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  width:100%;
+    
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float:left;
+  color: #808080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold; 
+  width:455px;
+  border: 1px solid rgba(217,217,217,1);
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: blue;
+  border-bottom: 2px solid blue;
+  width:455px;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: blue;
+  width:455px;
+}
+
+/*****************top-nav****************************/
+
+/*inputBox*/
+.inputBox {
+   padding: 15px 0px 10px 0px;
+   text-align: center;
+}
+
+
+/************section-article2*****************/
+.require_info {
+   float: right;
+   margin: 10px 100px 0px 0px;
+}
+/*myPage_article2*/
+.myPage_selection>.myPage_article2 {
+   width: 100%;
+   /**************************************************************/
+   height: 100%;
+   /*border: 1px solid #ff00ff;*/
+   float: left;
+}
+
+/*h4 글자*/
+.myPage_article2>h4 {
+   color: rgba(70, 84, 163, 1);
+   font-family: Noto Sans;
+   font-weight: 700;
+   font-size: 18px;
+   border-bottom: 3px solid rgba(68, 84, 161, 1);
+   padding: 30px 0px 15px 0px;
+}
+/*리스트 테이블*/
+.myPage_article2>table {
+   width: 100%;
+   height: 51px;
+   background: rgba(245, 245, 245, 1);
+   text-align: center;
+}
+
+.myPage_article2 > th {
+   background-color: rgba(245, 245, 245, 1);
+   border-bottom: 2px solid rgba(245, 245, 245, 1);
+}
+
+.myPage_article2 > td {
+   background-color: white;
+   border-bottom: 2px solid rgba(245, 245, 245, 1);
+}
+
+
+
+/*버튼*/
+.btn_imageAttach {
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+   padding: 10px;
+   width: 200px;
+   height: 300px;
+   background: url(https://picsum.photos/200/300);
+}
+/*버튼*/
+.DForm_enrollbtn {
+   color: rgba(255, 255, 255, 1);
+   font-family: Noto Sans;
+   font-weight: SemiBold;
+   font-size: 24px;
+   text-align: center;
+   background: rgba(68, 84, 161, 1);
+   width: 150px;
+   height: 40px;
+}
+
+
+.memo textarea {
+   width: 800px;
+   height: 100px;
+   margin: 2px 0px 0px 50px;
+}
+
+.DForm_enrollbtn {
+   width: 283px;
+   height: 65px;
+   background-color: rgba(70, 84, 163, 1);
+   border-radius: 6px;
+   color: rgba(255, 255, 255, 1);
+   font-family: Noto Sans;
+   font-weight: SemiBold;
+   font-size: 24px;
+   margin: 100px 0px 20px 350px;
+   display: inline-block;
+   text-align: center;
+}
+
+.DForm_enrollbtn>span {
+   display: inline-block;
+   width: 100;
+   height: 100%;
+   padding: 20px;
+}
+/*페이징*/
+.paging {
+   margin: 0px auto;
+   margin-top: 50px;
+   width: 672px;
+   height: 40px;
+   font-family: Noto Sans;
+   font-weight: bold;
+   font-size: 12px;
+}
+
+.paging ul>li {
+   float: left;
+   padding: 15px 17px 15px 17px;
+   border: 1px solid rgba(239, 239, 239, 1);
+}
+
+.paging .myPage_PagePicto {
+   width: 11px;
+   height: 11px;
+}
+
+.paging ul>li>a {
+   color: rgba(75, 75, 75, 1);
+}
+
+.myRDMstate{
+   color:blue;
+}
+
+
+.myPage_article2 .DriverenrollForm th {
+   padding: 20px 0px 20px 0px;
+   background-color: white;
+   border-bottom: none;
+   
+}
+
+/*버튼 모양잡기*/
+.DriverenrollForm  .smallbtn {
+   text-align: center;
+   color: rgba(68, 84, 161, 1);
+   width: 80px;
+    height: 35px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgba(73,85,159,1);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: hidden;
+    float:left;
+    }
+    
+ .DriverenrollForm span {
+ display: inline-block;
+ padding-top: 10px;
+ }
+/*input 모양잡기*/
+.DL_info input {
+   width: 281px;
+   height: 35px;
+   background: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(217, 217, 217, 1);
+   border-radius: 6px;
+   margin: 10px auto;
+   
+}
+
+.DC_info input {
+   width: 281px;
+   height: 35px;
+   background: rgba(255, 255, 255, 1);
+   border: 1px solid rgba(217, 217, 217, 1);
+   border-radius: 6px;
+   margin: 10px auto;
+   
+}
+.DriverenrollForm th.one{
+   display:inline-block;
+   width:283;
+   
+}
+/*차량인증 띈거 붙이기*/
+.DL_info td {
+   padding: 0px 0px 0px 0px;
+   background-color: white;
+   border-bottom: none;
+   width:182.8;  
+}

@@ -7,12 +7,12 @@
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>Insert title here</title>
+<script src="/assets/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c6544d76c3912585c75cfd126a875faf&libraries=services,clusterer,drawing"></script>
 <script src="/assets/jqueryUi/jquery-ui.js"></script>
-<script src="/assets/MultiDatesPicker/jquery-ui.multidatespicker.js"></script>
+<!-- <script src="/assets/MultiDatesPicker/jquery-ui.multidatespicker.js"></script> -->
 <link rel="stylesheet" href="/assets/jqueryUi/jquery-ui.min.css">
 <link rel="stylesheet" href="/assets/css/style.css">
-<link rel="stylesheet" href="/assets/css/datepicker.css">
 </head>
 <body>
 <c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
@@ -40,17 +40,19 @@
 				<img src="assets/images/map_line_02.png">
 				<table>
 					<tr>
-						<td><input type="text" value="" id="s-addr" class="s-addr" placeholder="출발지를 입력하세요"><img class="ae-btn" src="assets/images/arrows_exchange.png"></td>
+						<td><input type="text" value="" id="s-addr" class="s-addr" placeholder="출발지를 입력하세요" onclick="ssp()"><img class="ae-btn" src="assets/images/arrows_exchange.png"></td>
 						<td><input type="hidden" value="" class="s-lat"></td>
 						<td><input type="hidden" value="" class="s-lng"></td>
 					</tr>
 					<tr>
-					 	<td><input type="text" value="" id="e-addr" class="e-addr" placeholder="도착지를 입력하세요"><img class="ic-btn" src="assets/images/ico_close.png"></td>
+					 	<td><input type="text" value="" id="e-addr" class="e-addr" placeholder="도착지를 입력하세요" onclick="sep()"><img class="ic-btn" src="assets/images/ico_close.png"></td>
 						<td><input type="hidden" value="" class="e-lat"></td>
 						<td><input type="hidden" value="" class="e-lng"></td>
 				</table>
 				</div>
+			<span id="finish" onclick="setMap()">설정완료</span>
 			</div>
+			<div id="map"></div>
 			<div class="t-sec">
 				<p>탑승 가능한 인원 수*</p>
 				<input type="number" min=1 placeholder="1명"> 
@@ -89,32 +91,81 @@ $(document).ready(function() {
 	      }
 	    });
 	});
-// $(function() {
-//     //input을 datepicker로 선언
-//     $("#datepicker").datepicker({
-//         dateFormat: 'yy-mm-dd' //달력 날짜 형태
-// //         ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
-//         ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
-//         ,changeYear: true //option값 년 선택 가능
-//         ,changeMonth: true //option값  월 선택 가능                
-//         ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
-//         ,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
-// //         ,buttonImageOnly: true //버튼 이미지만 깔끔하게 보이게함
-// //         ,buttonText: "선택" //버튼 호버 텍스트              
-//         ,yearSuffix: "년" //달력의 년도 부분 뒤 텍스트
-//         ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
-//         ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
-//         ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
-//         ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 Tooltip
-//         ,minDate: "-5Y" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-//         ,maxDate: "+5y" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
-//     });                    
-//     //초기값을 오늘 날짜로 설정해줘야 합니다.
-//     $('#datepicker').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)            
-// });
-// $("#datepicker").multiDatesPicker();
-// $("#datepicker").multiDatesPicker('gotDate', new Date());
-// var dates = $('#datepicker').multiDatesPicker('getDates');
+
+function setMap() {
+	if($(".s-lat").val() == "" || $(".s-lng").val() == "" || $(".e-lat").val() == "" || $(".e-lng").val() == "") {
+		alert("검색 후에 시도해주세요");
+		return;
+	}
+	$("#map").attr("style","width:720px; height: 500px; margin:0px 0px 80px 0px;");
+	var latlng = "";
+	var slat = $(".s-lat").val();
+	var slng = $(".s-lng").val();
+	var elat = $(".e-lat").val();
+	var elng = $(".e-lng").val();
+	$.ajax({
+		
+		url : "${pageContext.request.contextPath}/setPath",		
+		type : "post",
+		contentType : "application/json",
+		data : JSON.stringify({slat: slat,
+			slng: slng,
+			elat: elat,
+			elng: elng}),
+
+		dataType : "json",
+		success : function(result){
+			console.log(result)
+			$(".fare").remove();
+			document.getElementById("input-div").innerHTML += "<div class='fare'>1인당 적립 포인트:"+result.totalFare+"</div>";
+			var bounds = new kakao.maps.LatLngBounds();
+			bounds.extend(new kakao.maps.LatLng(slat, slng));
+			bounds.extend(new kakao.maps.LatLng(elat, elng));
+			latlng = result.latlng;
+			var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+			mapOption = { 
+			    center: new kakao.maps.LatLng(slat, slng), // 지도의 중심좌표
+			    level: 5 // 지도의 확대 레벨
+			};  
+			var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+			map.setBounds(bounds);
+			var marker = new kakao.maps.Marker({
+				position: new kakao.maps.LatLng(slat, slng),
+				map: map
+			})
+			
+			//선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+			//테스트 결과 json 파싱해서 for문 반복으로 넣어주면 될듯
+			var linePath = [
+				new kakao.maps.LatLng(slat, slng),
+				];
+			for (var i=0; i<latlng.length; i++) {
+					if (i == latlng.length) {
+						linePath.push(new kakao.maps.LatLng(elat,elng));
+						break;
+					}
+					linePath.push(new kakao.maps.LatLng(latlng[i+1],latlng[i]),);
+					i++;
+				};
+			
+			//지도에 표시할 선을 생성합니다
+			var polyline = new kakao.maps.Polyline({
+				path: linePath, // 선을 구성하는 좌표배열 입니다
+				strokeWeight: 5, // 선의 두께 입니다
+				strokeColor: '#4454a1', // 선의 색깔입니다
+				strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+				strokeStyle: 'solid' // 선의 스타일입니다
+			});
+			
+			//지도에 선을 표시합니다 
+			polyline.setMap(map); 
+		},
+		error : function(XHR, status, error) {
+			console.error(status + " : " + error);
+		}
+	});
+	
+}
 $(".ae-btn").on("click", function() {
 	var saddr = $(".s-addr").val();
 	var slat = $(".s-lat").val();
@@ -134,11 +185,11 @@ $(".ic-btn").on("click", function() {
 	$(".s-addr").val("");
 	$(".e-addr").val("");
 })
-$("#s-addr").on("click", function() {
+function ssp() {
 	window.open("ssp", "child", "width=1350, height=820, left=300, top=100");
-})
-$("#e-addr").on("click", function() {
+}
+function sep() {
 	window.open("sep", "child", "width=1350, height=820, left=300, top=100");
-})
+}
 </script>
 </html>

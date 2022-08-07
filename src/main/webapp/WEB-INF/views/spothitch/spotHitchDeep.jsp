@@ -5,25 +5,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<script type="text/javascript" src="./assets/js/jquery-1.12.4.js"></script>
+<title>스팟 히치하이크 상세</title>
+<link href="${pageContext.request.contextPath}/assets/css/style.css"
+	rel="stylesheet" />
+<script src="/assets/js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c6544d76c3912585c75cfd126a875faf&libraries=services,clusterer,drawing"></script>
-<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 	<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
 	<div class="driver-top-banner clear">
-		<span class="more">실시간 탑승 가능<br> SPOT HITCHHIKE
-		</span> <span class="more2">현재 나의 위치에서 가까운 드라이버를 찾아<br> 출발지부터
-			목적지까지 편하게 이동해보세요.
-		</span>
+		<div class="driver-top-banner-inside">
+		<div class="more-box">
+			<p class="more">실시간 탑승 가능</p>
+			<p class="more3">SPOT HITCHHIKE</p>
+		</div>
+			<span class="more2">현재 나의 위치에서 가까운 드라이버를 찾아<br> 출발지부터
+				목적지까지 편하게 이동해보세요.
+			</span>
+		</div>
 	</div>
 	<div class="inner clear">
 		<div class="hitch-deep-infoTop clear">
 			<div class="markImg"></div>
-			<span>드라이버 spotmate 12 님</span>
-			<a href="#">탑승 요청</a>
+			<span>드라이버 spotmate 12 님</span> <a href="#">탑승 요청</a>
 		</div>
 		<div class="data">
 			<table>
@@ -50,7 +55,7 @@
 			</table>
 		</div>
 		<div id="hitch-deep-map"></div>
-		<a class="back" href="../hitch">목록보기</a>
+		<a class="back" href="/spotHitchhike">목록보기</a>
 	</div>
 	<c:import url="/WEB-INF/views/includes/footer.jsp"></c:import>
 

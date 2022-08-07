@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.myPage_article2 .myPage_InfoChk {
+	text-align: center;
+	padding-top: 20px;
+}
+
+/*비밀번호 재확인 글자*/
+.myPage_InfoChkEx h4 {
+	color: rgba(81, 81, 81, 1);
+	font-family: Noto Sans;
+	font-weight: SemiBold;
+	font-size: 18px;
+	text-align: left;
+}
+
+.myPage_InfoChkEx p {
+	color: rgba(81, 81, 81, 1);
+	font-family: Noto Sans;
+	font-weight: Regular;
+	font-size: 14px;
+	text-align: left;
+	margin-top: 13px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid rgba(68, 84, 161, 1);
+}
+
+.myPage_article2 .myPage_InfoChkPass {
+	height: 160px;
+	width: 100%;
+	border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+
+/*아이디 비밀번호*/
+.myPage_InfoChkForm {
+	margin: 0px auto;
+}
+
+.myPage_InfoChkForm th {
+	color: rgba(30, 30, 30, 1);
+	font-family: Noto Sans;
+	font-weight: Regular;
+	font-size: 16px;
+	text-align: left;
+	padding-top: 10px;
+}
+
+/*input 박스*/
+.myPage_InfoChkForm td>input {
+	width: 330px;
+	height: 45px;
+	background: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(217, 217, 217, 1);
+	border-radius: 6px;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+
+/*확인 버튼*/
+.myPage_article2>.myPage_InfoChk>button {
+	width: 250px;
+	height: 55px;
+	background: rgba(68, 84, 161, 1);
+	border-radius: 6px;
+	margin-top: 70px;
+}
+
+.myPage_article2>.myPage_InfoChk>button > span {
+	width: 37px;
+    color: rgba(255,255,255,1);
+    font-family: Noto Sans;
+    font-weight: SemiBold;
+    font-size: 20px;
+    text-align: left;
+}

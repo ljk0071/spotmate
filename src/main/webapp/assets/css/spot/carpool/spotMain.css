@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+#wrap {
+ 	width: 1920px;
+	margin: 0px auto;
+
+}
+
+#spotContent {
+	width: 1440px;
+	height: 1000px;
+	margin:0px auto;
+	position: relative; 
+		
+}
+
+.spot-content-head{
+	
+  width: 1440px;
+  height: 200px;
+  background: rgba(255,255,255,1);
+}
+
+.mainText1 {
+  width: 700px;
+  color: rgba(30,30,30,1);
+  display:inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Noto Sans Korean';
+  font-weight: 700;
+  font-size: 32px;
+  text-align: left;
+  padding: 100px 0px 0px 0px;
+  
+}
+
+.mainText2 {
+  width: 500px;
+  color: rgba(30,30,30,1);
+  display:inline-block;
+  position: absolute;
+  top: 0px;
+  left: 740px;
+  font-family: 'Noto Sans Korean';
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  padding: 100px 50px 0px 0px;
+  margin: 0px 210px 0px 0px;
+}
+
+/*  hover */
+.service1 {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color:  rgba(255,255,255,1);
+    overflow: hidden;
+    float:left;
+    
+}
+.service1_image {
+    width: 750px;
+    height: 500px;
+    margin: 0px auto;
+}
+.service1_image img {
+	width: 700px;
+    height: 500px;
+}
+.service1_image > a {
+    position:relative;
+    display: block;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.service1_image > a > img {
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.service1_image > a:hover img{
+    transform: scale(1.1);
+}
+
+
+.service1_image > a > h3 {
+    width: 700px;
+    height: 500px;
+    background-color: rgba(20, 15, 19, 0.6);
+    position: absolute;
+    
+}
+.service1_image > a > h3 > span {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    font-weight: 700;
+    top: 40%;
+    left: 33%;
+}
+/*************************히치하이크 그림**********/
+.service2 {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color:  rgba(255,255,255,1);
+    overflow: hidden;
+    float:right;
+}
+.service2_image {
+    width: 700px;
+    height: 500px;
+    margin: 0px auto;
+}
+.service2_image img {
+	width: 700px;
+    height: 500px;
+}
+.service2_image > a {
+    position:relative;
+    display: block;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+.service2_image > a > img {
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.service2_image > a:hover img{
+    transform: scale(1.1);
+}
+
+.service2_image > a > h3 {
+    width: 700px;
+    height: 500px;
+    background-color: rgba(20, 15, 19, 0.6);
+    position: absolute;
+    
+}
+.service2_image > a > h3 > span {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    font-weight: 700;
+    top: 40%;
+    left: 33%;
+}
+
+
+#spotContent > .carpooltext {
+  width: 500px;
+  color: rgba(47,47,48,1);
+  position: absolute;
+  top: 780px;
+  left: 10px;
+  font-family: 'Noto Sans Korean';
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+
+#spotContent > .hitchhiketext {
+  width: 500px;
+  color: rgba(30,30,30,1);
+  position: absolute;
+  top: 780px;
+  left: 745px;
+  font-family: 'Noto Sans Korean';
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+
+#spotContent > a > .usebutton1 { 
+  width: 128px;
+  height: 46px;
+  background: rgba(249,250,251,1);
+  position: absolute;
+  top: 790px;
+  left: 565px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border:none;
+  color: rgba(70,84,163,1);
+  font-family: 'Noto Sans Korean';
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  cursor : pointer;
+}
+
+#spotContent > a > .usebutton2 {
+  width: 128px;
+  height: 46px;
+  background: rgba(249,250,251,1);
+  position: absolute;
+  top: 790px;
+  left: 1305px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border:none;
+  color: rgba(70,84,163,1);
+  font-family: 'Noto Sans Korean';
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  cursor : pointer;
+}
+
+#spotContent > a > button > .usebuttonPicto {
+	margin : 5px 15px 0px 0px;
+	float:right;
+}
+
+

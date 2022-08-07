@@ -1,0 +1,525 @@
+@charset "UTF-8";
+
+
+#wrap {
+ 	width: 1920px;
+	margin: 0px auto;
+	
+}
+
+#carpoolcontent{
+	width: 1000px;
+	margin:0px auto;
+
+	}
+
+#carpoolcontent{
+	width: 1440px;
+	margin:0px auto;
+}
+.content-head{
+/*   width: 1920px; */
+	margin: 0px auto;
+	height: 230px;
+	background:rgba(245,245,245,1);	
+}
+
+.carpool-MainText1 {
+/*   top: 303px; */
+/*   left: 951px; */
+  width: 660px;
+  color: rgba(30,30,30,1);
+  font-family: Montserrat;
+  font-weight:700;
+  font-size: 32px;
+  text-align: left;
+  float: left;
+  margin: 90px 0px 0px 550px;
+}
+
+.carpool-MainText2 {
+  width: 500px;
+  color: rgba(30,30,30,1);
+  top: 303px;
+  left: 975px;
+  font-family: Montserrat;
+  font-weight:700;
+  font-size: 20px;
+  text-align: left;
+  float: right;
+  padding: 100px 50px 0px 0px;
+  margin: 0px 160px 0px 0px;
+
+}
+/****************aside******************/
+.carpoolDeep-aside{
+	width: 1440px;
+	margin:0px auto;
+	
+}
+.aside{
+	width: 380px;
+    height: 810px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    float:right;
+    margin:30px 0px 0px 0px;
+       
+}
+
+.confirmForm{
+    color: rgba(91,91,91,1);
+	font-family: Noto Sans Korean;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    padding: 40px 0px 15px 0px;
+    margin: 0px 30px;
+    border-bottom: 1px solid rgba(217,217,217,1);
+  
+}  
+
+.confirm{
+    color: rgba(91,91,91,1);
+	font-family: Noto Sans Korean;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    border:none; 
+    padding:10px 0px 30px 0px; 
+    width:340px; 
+
+}   
+
+.point{
+    color: rgba(91,91,91,1);
+	font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    padding: 15px 0px 20px 35px;
+ 
+}  
+
+.pointConfirm{
+    color: rgba(73,85,159,1);
+	font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    border:none;
+    width:250px;
+    padding: 10px 0px 0px 0px;
+} 
+
+.pointText {
+	color: rgba(91,91,91,1);
+	font-family: Noto Sans Korean;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+	
+}
+
+.rideButton{
+	width: 330px;
+    height: 65px;
+    background: rgba(70,84,163,1);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border:none; 
+    color: rgba(255,255,255,1);        
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;    
+    text-align: center;
+    margin: 15px 0px 0px 23px;
+    cursor : pointer;
+}
+/****************이동경로 안내******************/
+
+.carpool-top{
+	width:1000px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(91,91,91,1); 
+	border-width: 1px;
+	padding: 40px 0px 30px 0px;
+	position:relative;
+	height : 190px;
+}
+.carpooltop-text1{
+	 width:600px;
+	
+}
+
+.carpooltop-text2 {
+	color: rgba(72,72,72,1);
+	font-family: 'Noto Sans Korean';
+    font-weight: 700;
+    font-size: 24px;
+    margin : 10px 10px 10px 0px;
+    padding: 0px 0px 15px 0px;
+    float:left;
+}
+
+.pathConfirm{
+	display : inline-block;
+    color: rgba(72,72,72,1);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    margin : 10px 0px 0px 0px;
+}
+
+
+
+.path-confirm{
+    color: rgba(91,91,91,1);
+    width:550px;
+	font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+    border:none;  
+    margin : 10px 0px 10px 0px;  
+
+} 
+
+
+.pathPicto{
+	position:absolute;
+	top:145px;
+	left:600px;
+	
+}
+
+.pathTime{
+	position:absolute;
+	top:175px;
+	left:640px;
+	color: rgba(73,85,159,1);
+	font-family: Montserrat;
+	font-weight: 600;
+	text-align:left;
+	
+    
+}
+/*******************드라이버 차량 정보***********/
+
+.authDriverInfo{
+	width: 1000px;
+    color: rgba(72,72,72,1);
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    padding: 50px 0px 40px 0px;
+}    
+    
+.qnaButton{
+	width: 130px;
+    height: 40px;
+    background: rgba(239,239,239,1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border:none;
+    float:right;
+    color: rgba(95,95,95,1);
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    cursor : pointer;
+   
+}
+
+.qnaPicto:after {
+	cursor : pointer;
+	float:left;
+}
+
+
+.carpool-picture {
+    position: relative;
+    width: 1000px;
+    height: 350px;
+    background-color:  rgba(255,255,255,1);
+    overflow: hidden;
+    float:left;
+    
+}
+.carpool-picture-image {
+    width: 1000px;
+    height: 350px;
+    margin: 0px auto;
+}
+.carpool-picture-image img {
+	 width: 1000px;
+    height: 350px;
+}
+.carpool-picture-image > a {
+    position:relative;
+    display: block;
+     width: 1000px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.carpool-picture-image > a > img {
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.carpool-picture-image > a:hover img{
+    transform: scale(1.1);
+}
+
+
+.carpool-picture-image > a > h3 {
+    width: 1000px;
+    height: 350px;
+    background-color: rgba(20, 15, 19, 0.6);
+    position: absolute;
+    
+}
+.carpool-picture-image > a > h3 > span {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    font-weight: 700;
+    top: 40%;
+    left: 38%;
+}
+/************드라이버 소개*******************/
+.carpool-top2{
+	width:1000px;
+	
+}
+.driverIntoduce{
+	width: 310px;
+    color: rgba(72,72,72,1);
+    font-family: Noto Sans Korean;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    padding:70px 0px 0px 0px;
+    float:left;
+}   
+    
+.self-Check{
+	width: 130px;
+    color: rgba(70,84,163,1);
+    font-family: Noto Sans Korean;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    float:right;
+    padding:2px 0px 0px 0px;
+	
+}
+.self-checkPicto {
+	float:left;
+}
+.introduceText{
+	width: 800px;
+    color: rgba(72,72,72,1);
+   /* position: absolute;
+    top: 760px;
+    left: 0px;*/
+    font-family: Noto Sans Korean;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    padding: 30px 200px 0px 0px;
+    float:right;
+}   
+
+/*****************드라이버 차량 정보**********/
+
+.driverInfo{
+	width: 1000px;
+    color: rgba(72,72,72,1);
+    font-family: Noto Sans Korean;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 50px 0px 30px 0px;
+    float:left;
+    
+}
+
+.carpool-top2 table {
+    width: 700px;
+    color: rgba(72,72,72,1);
+	border-collapse: collapse;
+	/*position: relative;*/
+    font-family: Noto Sans;
+    font-weight: 500; 
+    font-size: 16px;
+    text-align: left;
+    float:left;
+    
+        	
+}
+.carpool-top2 tr {
+	width : 300px;
+}
+
+.carpool-top2 td {
+	 padding: 5px 0px 5px 0px;	 
+	
+}
+
+.infoPicto:after {
+	float:left;
+}
+
+/*********************리뷰 배너**************/
+
+
+.review{
+	width: 250px;
+    color: rgba(72,72,72,1);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    margin:50px 0px 30px 550px;
+}
+
+.review_banner_wrapper{display:block; position:relative; width:100%; height:350px; padding:35px 0 70px; box-sizing:border-box; background:#f6f6f6;}
+.review_banner_wrapper .review_banner .swiper-slide a{display:block; position:relative;}
+.review_box{display:block; position:relative;}
+.review_box .review_top{display:block; position:relative;}
+.review_box .review_top .writer_img{display:inline-block; position:relative; vertical-align:middle; width:70px; height:70px; border-radius:70px; background:#999;}
+/*.review_box .review_top .writer_img img{}*/
+.review_box .review_top .writer_info{display:inline-block; position:relative; vertical-align:middle; padding-left:10px; box-sizing:border-box;}
+.review_box .review_top .writer_info .name{display:block; position:relative; text-align:left; color:#1e1e1e; font-size:16px; font-weight:600; letter-spacing:-0.25px; line-height:20px;}
+.review_box .review_top .writer_info .date{display:block; position:relative; margin-top:5px; text-align:left; color:#1e1e1e; font-size:14px; font-weight:400; letter-spacing:-0.25px; line-height:20px;}
+.review_box .review_dec{display:block; position:relative; margin-top:20px; text-align:left; color:#1e1e1e; font-size:14px; font-weight:400; letter-spacing:-0.25px; line-height:20px;}
+
+.review_banner_wrapper .review_banner_btns{display:inline-block; position:absolute; bottom:30px; left:50%; transform:translateX(-50%);}
+.review_banner_wrapper .review_banner_btns .swiper-button-prev{display:inline-block; position:relative; top:auto; bottom:auto; left:auto; right:auto; border:0; cursor:pointer; width:40px; height:40px; background:url(../../images/common/ico_arrow_lft.png)no-repeat center center;}
+.review_banner_wrapper .review_banner_btns .swiper-button-prev:after{display:none;}
+.review_banner_wrapper .review_banner_btns .swiper-button-next{display:inline-block; position:relative; top:auto; bottom:auto; left:auto; right:auto; border:0; cursor:pointer; width:40px; height:40px; background:url(../../images/common/ico_arrow_rit.png)no-repeat center center; margin-left:10px;}
+.review_banner_wrapper .review_banner_btns .swiper-button-next:after{display:none;}
+/********** //review_banner **********/
+
+
+.carpool-section4{
+	
+	width:1440px;
+	margin: 0px auto;
+}
+.recommend{
+	width: 250px;
+    color: rgba(72,72,72,1);
+    /*position: absolute;
+    top: 2110px;
+    left: 250px;*/
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    margin:50px 0px 30px 0px;
+}
+	
+.recommendList ol{
+	display:inline-block;
+	width: 310px;
+    height: 130px;
+    background: rgba(255,255,255,1);
+   /* position: absolute;
+    top: 0x;
+    left: 0px;*/
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0px 0px 8px rgb(1 1 1 / 50%);
+    margin:10px 46px 0px 0px;
+    position:relative;
+  	
+}
+
+.recommendList button{
+	border:none;
+	border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background:rgba(245,245,245,1);	
+    text-align:center; 
+    padding:5px 10px 5px 10px; 
+    cursor:pointer;
+ 	position:absolute;
+ 	left:200px; 
+ 	top:75px;    
+}
+
+.choose-text{
+	color: rgba(72,72,72,1);
+    font-family: Noto Sans Korean;
+    font-weight: 700;
+    font-size: 17px;
+    float:left;
+    padding:7px 0px 0px 10px;
+	
+}
+.recommend-List-Picto{
+	float:right;
+	padding:10px 10px 13px 10px;
+}
+
+.recommend-Driver-list{
+	width: 230px;
+    color: rgba(72,72,72,1);
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 17px;
+    opacity: 1;
+    text-align: left;
+    padding:25px 0px 10px 20px;
+}
+
+.recommend-start-list{
+	width: 150px;
+    color: rgba(154,154,154,1);
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    padding:0px 0px 5px 20px;
+}
+
+.recommend-point-list{
+	width: 170px;
+    color: rgba(73,85,159,1);
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 15.5px;
+    text-align: left;
+    padding:20px 0px 10px 20px;
+}
+	
+	
+
+.recommend-button{
+	width: 233px;
+    height: 66px;
+    background: rgba(73,85,159,1);  
+    color: rgba(255,255,255,1);    
+    font-family: Noto Sans;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+	margin:35px 0px 200px 0px;
+	cursor:pointer;
+}
+

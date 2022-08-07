@@ -1,0 +1,410 @@
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+	display: block;
+	content: "";
+	line-height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.mateDeep_wrap {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 1);
+	margin: 0px auto;
+}
+
+.mate-deep-banner {
+	width: 1920px;
+	margin: 0px auto;
+}
+
+.mateDeep_img1 {
+	margin: 0px 0px 0px 0px;
+}
+
+.mateDeep_img2 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	/* 	display: block; */
+	float: right;
+	margin: 0px 55px 0px 0px;
+	height: 40px;
+}
+
+.mateDeep_placeRecommend {
+	margin: 0px 0px 0px 545px;
+}
+
+.mateDeep_placeAround {
+	color: rgba(91, 91, 91, 1);
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 10px 10px 10px 10px;
+}
+
+.mateDeep_placeRecommend select {
+	background: url('/assets/images/regularcaret-down.png') no-repeat 97%
+		50%/15px auto;
+	border: 2px solid rgba(217, 217, 217, 1);
+	border-right: none;
+	width: 140px;
+	padding: 8px 35px 7px 25px;
+	margin: 0px 0px 0px 0px;
+	font-family: Noto Sans;
+	font-weight: 400px;
+	color: rgba(102, 102, 102, 1);
+}
+
+.mateDeep_banner1 {
+	/*   width: 1920px; */
+	height: 230px;
+	background: rgba(245, 245, 245, 1);
+}
+
+.mate-deep-banner-l-sec {
+	float: left;
+	margin: 100px 0px 0px 235px;
+}
+
+.mate-deep-banner-l-sec p {
+	color: rgba(30, 30, 30, 1);
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.mate-deep-banner-l-sec span {
+	color: rgba(30, 30, 30, 1);
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.mateDeep_banner1 h3 {
+	color: rgba(30, 30, 30, 1);
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 20px;
+	float: right;
+	margin: 100px 320px 0px 0px;
+}
+/*************************mateDeep_content*******************************/
+.mateDeep_content {
+	width: 1000px;
+	height: 1500px;
+	/* 	margin: 0px 0px 0px 550px; */
+	background: rgba(255, 255, 255, 1);
+}
+
+.mateDeep_infoBox {
+	width: 380px;
+	height: 800px;
+	position: absolute;
+	top: 0px;
+	left: 1000px;
+	border: 1px solid rgba(217, 217, 217, 1);
+	float: right;
+	margin: 30px 0px 0px 60px;
+}
+
+.mateDeep_infoBox .driverInfo {
+	width: 380px;
+	height: 400px;
+	margin: 0px auto;
+	border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+
+.mateDeep_infoBox .mateDeep_passengers {
+	width: 100px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 45px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_CPassengers {
+	width: 40px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 75px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_boardingtime {
+	width: 80px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 130px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_CBoardingtime {
+	width: 130px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 160px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_startDay {
+	width: 80px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 220px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_CStartDay {
+	width: 160px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 250px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_endDay {
+	width: 85px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 310px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_CEndDay {
+	width: 160px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 340px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_totalPoint {
+	width: 140px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 505px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_payPoint {
+	width: 200px;
+	color: rgba(73, 85, 159, 1);
+	position: absolute;
+	top: 445px;
+	left: 30px;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .p1 {
+	width: 230px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 480px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 14px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .p2 {
+	width: 280px;
+	color: rgba(91, 91, 91, 1);
+	position: absolute;
+	top: 530px;
+	left: 30px;
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 14px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_infoBox .mateDeep_boardingBtn {
+	width: 310px;
+	height: 65px;
+	background: rgba(70, 84, 163, 1);
+	opacity: 1;
+	position: absolute;
+	top: 700px;
+	left: 25px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-style: none;
+	overflow: hidden;
+}
+
+.mateDeep_infoBox .p3 {
+	width: 100px;
+	color: rgba(255, 255, 255, 1);
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 24px;
+	margin: 0px 0px 0px 100px;
+}
+/********************** titleFont ***********************************/
+.mateDeep_content .mateDeep_titleFont1 {
+	width: 140px;
+	color: rgba(72, 72, 72, 1);
+	font-family: 'Noto Sans Korean';
+	font-weight: 700;
+	font-size: 24px;
+	opacity: 1;
+	text-align: left;
+	padding: 50px 0px 40px 0px;
+}
+
+.mateDeep_content .mateDeep_titleFont2 {
+	width: 200px;
+	color: rgba(72, 72, 72, 1);
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 22px;
+	opacity: 1;
+	text-align: left;
+	margin: 0px 0px 30px 0px;
+}
+/*********************** contnet > schedule *************************/
+.mateDeep_content .mateDeep_dayBox {
+	width: 90px;
+	height: 40px;
+	background: rgba(239, 239, 239, 1);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+}
+
+.mateDeep_content .mateDeep_dayBox p {
+	color: rgba(95, 95, 95, 1);
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 16px;
+	margin: 10px 0px 10px 24px;
+}
+
+.mateDeep_start {
+	width: 60px;
+	color: rgba(91, 91, 91, 1);
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 16px;
+	opacity: 1;
+	text-align: left;
+	margin: 30px 0px 5px 0px;
+}
+
+.mateDeep_today {
+	display: block;
+	width: 1000px;
+	float: left;
+	margin: 0px 0px 100px 0px;
+}
+
+.mateDeep_today .mateDeep_float {
+	float: left;
+}
+
+.mateDeep_today img {
+	margin: 60px 50px 0px 10px;
+}
+
+.mateDeep_time {
+	width: 100px;
+	color: rgba(91, 91, 91, 1);
+	font-family: Noto Sans;
+	font-weight: 400;
+	font-size: 16px;
+	opacity: 1;
+	text-align: left;
+	margin: 9px 0px 9px 0px;
+}
+
+.mateDeep_spot {
+	width: 120px;
+	color: rgba(91, 91, 91, 1);
+	font-family: Noto Sans;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+}
+
+.mateDeep_pictogrem {
+	width: 80px;
+	height: 10px;
+	background-color: #000000;
+	float: right;
+}
+/************************** map ****************************/
+.mateDeep_content .mateDeep_map {
+	width: 945px;
+	height: 300px;
+	background: rgba(245, 245, 245, 1);
+	margin: 0px 0px 21px 0px;
+}
+
+#content2 {
+	float: right;
+	width: 200px;
+	height: 50px;
+}

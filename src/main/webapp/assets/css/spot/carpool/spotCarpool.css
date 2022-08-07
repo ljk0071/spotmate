@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+
+#wrap {
+ 	width: 1920px;
+	margin: 0px auto;
+
+}
+
+#content {
+	width: 1440px;
+	height: 1550px;
+	margin:0px auto;
+	position: relative; 
+	
+}
+
+.content-head{
+	
+/*   width: 100%; */
+  height: 200px;
+  margin: 0px auto;
+  background:rgba(245,245,245,1);	
+}
+
+.carpool-MainText1 {
+  width: 660px;
+  color: rgba(30,30,30,1);
+  font-family: Montserrat;
+  font-weight:700;
+  font-size: 32px;
+  text-align: left;
+  float: left;
+  margin: 90px 0px 0px 550px;
+   
+}
+
+.carpool-MainText2 {
+  width: 500px;
+  color: rgba(30,30,30,1);
+  top: 303px;
+  left: 975px;
+  font-family: Montserrat;
+  font-weight:700;
+  font-size: 20px;
+  text-align: left;
+  float: right;
+  padding: 100px 50px 0px 0px;
+  margin: 0px 435px 0px 0px;
+
+
+}
+
+.searchForm{
+	
+  	width: 1440px;
+  	height:200px;  	
+	border-collapse: collapse;
+	/*position: absolute;*/
+}
+
+.carpoolInput1{
+	position: relative;
+	
+}
+
+.input1{
+	width: 310px;
+    height: 55px;
+    background: rgba(255,255,255,1);
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    border: 1px solid rgba(217,217,217,1);
+    font-family: Noto Sans;
+ 	font-weight: 400;
+  	font-size: 20px;
+  	text-align: left;
+  	padding: 0px 0px 0px 20px;
+
+}
+
+.carpoolInput1Picto{
+	top:62px;
+	left:300px;
+	position: absolute;
+	cursor : pointer;
+}
+
+.input2 {
+  width: 310px;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 40px;
+  left: 350px;
+  border: 1px solid rgba(217,217,217,1);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+ 
+}
+
+.input3 {
+  width: 295px;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 40px;
+  left: 690px;
+  border: 1px solid rgba(217,217,217,1);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+
+.input4 {
+  width: 185px;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 40px;
+  left: 1015px;
+  border: 1px solid rgba(217,217,217,1);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+
+.carpoolInput4Picto{
+
+	position: absolute;
+	top:52px;
+	left:1170px;
+	cursor : pointer;
+}
+
+.input5 {
+  width: 310px;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  border: 1px solid rgba(217,217,217,1);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+
+.carpoolInput5Picto {
+	
+	position: absolute;
+	top:115px;
+	left:300px;
+	cursor : pointer;
+}
+
+.input6 {
+  width: 310px;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  border: 1px solid rgba(217,217,217,1);
+  font-family: Noto Sans;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+
+.carpoolInput6Picto {
+	position: absolute;
+	top:115px;
+	left:640px;
+	cursor : pointer;
+}
+
+.search {
+  width: 210px;
+  height: 55px;
+  background: rgba(73,85,159,1);
+  position: absolute;
+  top: 40px;
+  left: 1230px;
+  color: rgba(255,255,255,1);
+  font-family: Noto Sans;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 0px 0px 30px;
+  border: none;
+  cursor : pointer;
+}
+
+.search > p{
+	margin:13px 0px 0px 0px;
+}
+
+.carpoolSearchPicto {
+	float:right;
+}
+
+#content > .searchForm > .detail{
+  width: 749px;
+  height:55px;
+  color: rgba(72,72,72,1);
+  position:absolute;
+  top: 100px;
+  left: 690px;
+  font-family: Noto Sans;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  border:1px solid #bfbfbf;  
+
+}
+
+.detailtext{
+	float:left;
+	padding: 0px 15px 0px 15px;
+	margin:18px 0px 0px 0px;
+	cursor:pointer;
+
+}
+
+input[type=checkbox] {
+    accent-color: rgba(73,85,159,1);
+}
+
+
+/***********************************************************************************************************************/
+    
+/****** 카풀 리스트 ******/
+
+.carList{
+	width:100%;
+	height:50px;
+	position: absolute;
+	top:225px;	
+}
+
+.listText {
+  width: 250px;
+  color: rgba(91,91,91,1);
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family: Noto Sans Korean;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+}
+
+/******  table ******/
+
+.list{
+	width:100%;
+	height:1000px;
+	position: absolute;
+	top:300px;
+}
+
+.list table {
+    width: 1440px;
+	border-collapse: collapse;
+	position: absolute;
+    font-family: Noto Sans;
+    font-weight: 500; 
+    font-size: 16px;
+    text-align: center;
+	
+}
+
+
+.list table>thead>tr {
+    border-top: 2px solid rgba(73,85,159,1); 
+    border-bottom: 1px solid rgba(245,245,245,1);
+    background-color: rgba(245,245,245,1); 
+
+}
+
+.list table>thead>tr>th {
+    padding: 25px 0px 25px 0px;
+    font-weight: 700; 
+}
+
+.list table>tbody>tr { 
+    border-bottom: 1px solid rgba(245,245,245,1);
+  
+}
+
+.list table>tbody>tr:hover { 
+	background-color: rgba(245,245,245,1); 
+}
+
+.list table>tbody>tr>td {
+    padding: 20px 0px 20px 0px;
+}
+
+.board {
+  width: 112px;
+  height: 42px;
+  background: rgba(239,239,239,1);
+  color: rgba(70,84,163,1);
+  font-family: Noto Sans;
+  font-weight: Bold;
+  font-size: 16px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border:none;
+  padding: 10px 10px 10px 10px;
+  cursor : pointer;
+  
+}
+
+/********************리스트 페이징**********/
+.paging {
+	margin: 0px auto;
+	width: 700px;
+    height: 54px;
+    position: absolute;
+    top: 1330px;
+    left: 370px;
+    font-family: Montserrat;
+  	font-weight: 700;
+  	font-size: 16px;
+  
+    
+}
+
+.paging ul>li{
+	float: left;
+	padding:15px 17px 15px 17px;
+	border: 1px solid  rgba(239,239,239,1);
+	
+}
+
+.paging ul>li>a {
+   color: rgba(75, 75, 75, 1);
+}
+
+.paging ul>li.active{
+	
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.carpoolPagePicto:after {
+	
+	float:right;
+	
+}
+

@@ -1,0 +1,146 @@
+.driver-top-banner-inside {
+	width: 1920px;
+	margin:0px auto;
+	
+}
+.more-box {
+	float: left;
+	margin: 100px 0px 0px 250px;
+}
+.driver-top-banner .more {
+	font-size: 30px;
+	font-family: Noto Sans Korean;
+	font-weight: 600;
+}
+.driver-top-banner .more3 {
+	font-size: 30px;
+	font-family: Montserrat;
+	font-weight: 600;
+}
+.driver-top-banner .more2 {
+	float:right;
+	font-size: 20px;
+	font-family: Noto Sans Korean;
+	font-weight: 600;
+	margin: 100px 300px 0px 0px;
+}
+
+#hitch-main-map {
+	float: left;
+	width: 650px;
+	height: 640px;
+	margin: 150px 0px 500px 0px;
+}
+
+.info {
+	float: left;
+	width: 710px;
+	border-top: 1px solid #e8e7e7;
+	border-right: 1px solid #e8e7e7;
+	margin: 150px 0px 500px 0px;
+}
+
+.infoTop {
+	text-align: center;
+	border-bottom: 3px solid #4454a1;
+	padding: 20px 0;
+}
+
+.searchbox {
+	padding: 20px 0px 20px 20px;
+	background-color: #e8e7e7;
+}
+
+.searchbox>.place {
+	width: 220px;
+	height: 30px;
+}
+
+.searchbox>.person {
+	width: 120px;
+	height: 30px;
+}
+
+.searchbox > button > img {
+	width:34px;
+	height:34px;
+}
+
+.detail-option {
+	position:relative;
+	border-bottom: 1px solid #e8e7e7;
+}
+.info > form > .detail-option > input{
+	margin: 10px 0px 10px 30px;
+}
+.info .detail-option .btn_a1:hover {
+	cursor: pointer;
+}
+.info .detail-option .btn_a1:before{display:block; position:absolute; top:50%; right:20px; transform:translateY(-50%); width:15px; height:9px; content:""; background:url(/assets/images/common/ico_select_down.png)no-repeat center center; transition:all .3s;}
+.info .detail-option.after .btn_a1:before{transform:translateY(-50%) rotate(180deg);}
+
+.driverList {
+	border-bottom: 1px solid #e8e7e7;
+	position: relative;
+}
+.driverList > .start {
+	margin: 20px;
+}
+.driverList > .start > p {
+	padding: 0px 0px 10px 0px;
+	color: #bfbfbf;
+}
+.driverList > .start > span {
+	font-size: 18px;
+	font-weight: 600;
+}
+.driverList > .end {
+	margin: 20px;
+}
+.driverList > .end > p {
+	padding: 0px 0px 10px 0px;
+	color: #bfbfbf;
+}
+.driverList > .end > span {
+	font-size: 18px;
+	font-weight: 600;
+}
+.driverList > .num {
+	margin: 20px;
+}
+.driverList > .num > span {
+	padding: 0px 30px 0px 0px;
+}
+.driverList > .num > p {
+	display:inline;
+	font-size: 18px;
+	font-weight: 600;
+}
+.driverList > .usePoint {
+	margin: 20px;
+}
+.driverList > .usePoint > span {
+	padding: 0px 30px 0px 0px;
+}
+.driverList > .usePoint > p {
+	display:inline;
+	font-size: 18px;
+	font-weight: 600;
+}
+.driverList > .carPos {
+	position: absolute;
+	top: 0px;
+	left: 650px;
+}
+
+.driverList > .hitchdeep {
+	position: absolute;
+	top: 170px;
+	left: 525px;
+}
+
+.driverList > .rideReq {
+	position: absolute;
+	top: 170px;
+	left: 625px;
+}
