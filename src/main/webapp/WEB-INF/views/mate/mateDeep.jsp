@@ -13,7 +13,6 @@
 <body>
 	<!-- mateDeep_wrap -->
 	<div class="mateDeep_wrap">
-		test
 		<!-- header -->
 		<header>
 			<c:import url="/WEB-INF/views/includes/header.jsp"></c:import>
