@@ -416,7 +416,7 @@
 }
 
 /*페이징*/
-.paging {
+.point-paging {
 	margin: 0px auto;
 	margin-top: 50px;
 	width: 672px;
@@ -426,17 +426,17 @@
 	font-size: 12px;
 }
 
-.paging ul>li {
+.point-paging ul>li {
 	float: left;
 	padding: 15px 17px 15px 17px;
 	border: 1px solid rgba(239, 239, 239, 1);
 }
 
-.paging .myPage_PagePicto {
+.point-paging .myPage_PagePicto {
 	width: 11px;
 	height: 11px;
 }
 
-.paging ul>li>a {
+.point-paging ul>li>a {
 	color: rgba(75, 75, 75, 1);
 }

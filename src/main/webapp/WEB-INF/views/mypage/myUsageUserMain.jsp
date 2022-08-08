@@ -31,13 +31,13 @@
 			</div>
 			<div class="box2">
 				<p>
-					<a href="./myPointCarge">포인트 충전 ></a>
+					<a href="/myPointCarge">포인트 충전 ></a>
 				</p>
 				<span>1,0000P </span> <img src="/assets/images/ico_point.png">
 			</div>
 			<div class="box3">
 				<p>
-					<a href="./myCouponMain">쿠폰 사용 ></a>
+					<a href="/myCouponMain">쿠폰 사용 ></a>
 				</p>
 				<span>2개 </span> <img src="/assets/images/ico_coupon.png">
 			</div>
@@ -81,10 +81,10 @@
 				<div class="topnav">
 
 					<ul>
-						<li><a href="#news">DRIVER 이용내역</a></li>
+						<li><a href="/myUsageDriverMain">DRIVER 이용내역</a></li>
 					</ul>
 					<ul>
-						<li><a class="active" href="#home">USER 이용내역</a></li>
+						<li><a class="active" href="/myUsageUserMain">USER 이용내역</a></li>
 					</ul>
 				</div>
 
@@ -274,7 +274,7 @@
 						</tbody>
 					</table>
 
-					<div class="paging">
+					<div class="point-paging">
 						<ul>
 							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-double-left.png">
 							</a></li>

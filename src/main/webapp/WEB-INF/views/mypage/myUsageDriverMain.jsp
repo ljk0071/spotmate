@@ -81,10 +81,10 @@
 				<div class="topnav">
 
 					<ul>
-						<li><a width="455px" class="active" href="#home">DRIVER 이용내역</a></li>
+						<li><a width="455px" class="active" href="/myUsageDriverMain">DRIVER 이용내역</a></li>
 					</ul>
 					<ul>
-						<li><a width="455px" href="#news">USER 이용내역</a></li>
+						<li><a width="455px" href="/myUsageUserMain">USER 이용내역</a></li>
 					</ul>
 				</div>
 
@@ -275,7 +275,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<div class="paging">
+					<div class="point-paging">
 						<ul>
 							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-double-left.png">
 							</a></li>

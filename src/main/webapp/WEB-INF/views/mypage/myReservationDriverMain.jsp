@@ -77,10 +77,10 @@
 					<tr>
 						<div class="topnav">
 							<ul>
-								<li><a class="active" href="#home">DRIVER 예약 등록 내역</a></li>
+								<li><a class="active" href="/myReservationDriverMain">DRIVER 예약 등록 내역</a></li>
 							</ul>
 							<ul>
-								<li><a href="#news">USER 예약 신청 내역</a></li>
+								<li><a href="/myReservationUserMain">USER 예약 신청 내역</a></li>
 							</ul>
 						</div>
 					</tr>
@@ -230,7 +230,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<div class="paging">
+					<div class="reserv-paging">
 						<ul>
 							<li><a href=""> <img class="myPage_PagePicto" src="/assets/images/chevron-double-left.png">
 							</a></li>

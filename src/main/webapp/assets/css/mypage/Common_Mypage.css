@@ -530,8 +530,8 @@
 }
 /*페이징*/
 .paging {
-   margin: 0px auto;
-   margin-top: 50px;
+   margin: 100px 0px 0px 650px;
+/*    margin-top: 50px; */
    width: 672px;
    height: 40px;
    font-family: Noto Sans;
@@ -553,7 +553,30 @@
 .paging ul>li>a {
    color: rgba(75, 75, 75, 1);
 }
+.reserv-paging {
+   margin: 50px 0px 0px 200px;
+/*    margin-top: 50px; */
+   width: 672px;
+   height: 40px;
+   font-family: Noto Sans;
+   font-weight: bold;
+   font-size: 12px;
+}
 
+.reserv-paging ul>li {
+   float: left;
+   padding: 15px 17px 15px 17px;
+   border: 1px solid rgba(239, 239, 239, 1);
+}
+
+.reserv-paging .myPage_PagePicto {
+   width: 11px;
+   height: 11px;
+}
+
+.reserv-paging ul>li>a {
+   color: rgba(75, 75, 75, 1);
+}
 .myRDMstate{
    color:blue;
 }
